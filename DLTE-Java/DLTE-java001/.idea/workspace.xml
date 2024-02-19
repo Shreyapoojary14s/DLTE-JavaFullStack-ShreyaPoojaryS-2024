@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="2cQwuB9mQzGMILgWB1FNzP0GrXn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -17,6 +24,64 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="Application.MobileBanking (1)">
+    <configuration name="Device" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basics.service.Device" />
+      <module name="DLTE-java001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basics.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileBanking (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basics.service.MobileBanking" />
+      <module name="DLTE-java001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basics.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileBanking" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="basics.service.Interactions" />
+      <module name="DLTE-java001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basics.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MobileBanking" />
+      <item itemvalue="Application.Device" />
+      <item itemvalue="Application.MobileBanking (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MobileBanking (1)" />
+        <item itemvalue="Application.MobileBanking" />
+        <item itemvalue="Application.Device" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -41,7 +106,14 @@
       <option name="presentableId" value="Default" />
       <updated>1708057330956</updated>
       <workItem from="1708057336725" duration="2515000" />
-      <workItem from="1708072752159" duration="1840000" />
+      <workItem from="1708072752159" duration="10460000" />
+      <workItem from="1708262793075" duration="45000" />
+      <workItem from="1708262861954" duration="149000" />
+      <workItem from="1708303428867" duration="163000" />
+      <workItem from="1708303623108" duration="1551000" />
+      <workItem from="1708305233041" duration="422000" />
+      <workItem from="1708313930303" duration="723000" />
+      <workItem from="1708319446877" duration="191000" />
     </task>
     <servers />
   </component>
@@ -49,25 +121,49 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1708074131383">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1708304958812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1708074131383" />
-    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1708074131383">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1708304958812" />
+    <state x="498" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1708083862502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1708074131383" />
-    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1708074131383">
+    <state x="498" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1708083862502" />
+    <state x="577" y="168" key="FileChooserDialogImpl" timestamp="1708078481963">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1708074131383" />
-    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1708074131383">
+    <state x="577" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1708078481963" />
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1708305187204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1708074131383" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1708072752452">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1708305187204" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1708305187204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1708072752452" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1708305187204" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1708305187204">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1708305187204" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1708305187204">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1708305187204" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1708080475752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1708080475752" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1708313952650">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1708313952650" />
+    <state x="209" y="109" key="new project wizard" timestamp="1708314899317">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="109" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1708314899317" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1708304098382">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1708304098382" />
   </component>
 </project>
