@@ -10,12 +10,25 @@ public class MinimumBalance {
 
         System.out.println("Enter your balance");
         balance= sc.nextDouble();
-        
+
         //lets have condition to maintain min bal. of 10k
         if(balance>0 && balance<1000){
-            // fine of 5%
-            balance=balance/0.05;
-            System.out.println("Your current bal is"+balance);
+            // fine
+            balance=balance/1.3;
+            System.out.println("You have not maintained min balance");
+
+            System.out.println(" In addition to fine ,Your current bal is " +balance);
+        }
+        else if(balance>=1000 && balance<25000){
+            // fine
+            balance=balance/1.1;
+            System.out.println("You have not maintained min balance");
+
+            System.out.println(" In addition to fine ,Your current bal is " +balance);
+        }
+        else{
+            System.out.println("Thank you for maintaining account in MYBANK ");
+            System.out.println(("Your current balance is "+ balance));
         }
 
     }
