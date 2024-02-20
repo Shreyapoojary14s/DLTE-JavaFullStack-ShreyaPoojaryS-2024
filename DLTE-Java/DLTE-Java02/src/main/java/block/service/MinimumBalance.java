@@ -27,8 +27,10 @@ public class MinimumBalance {
             System.out.println(" In addition to fine ,Your current bal is " +balance);
         }
         else{
+
             System.out.println("Thank you for maintaining account in MYBANK ");
             System.out.println(("Your current balance is "+ balance));
+
         }
 
     }

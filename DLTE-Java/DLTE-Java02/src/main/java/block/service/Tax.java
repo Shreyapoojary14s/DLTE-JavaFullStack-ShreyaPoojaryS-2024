@@ -39,7 +39,7 @@ public class Tax {
                     tax =  salary*0.30;
                     System.out.println("The tax payed is "+tax);
                 }
-
+                break;
 
             case  'n' :
                 if(salary >=0 && salary<=250000){
@@ -71,6 +71,7 @@ public class Tax {
                     tax =  salary*0.30;
                     System.out.println("The tax payed is "+tax);
                 }
+                break;
 
         }
         System.out.println("----Thanks for using our services------");
