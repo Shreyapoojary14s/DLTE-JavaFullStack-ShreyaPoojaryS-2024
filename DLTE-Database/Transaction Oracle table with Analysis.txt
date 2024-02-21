@@ -1,0 +1,133 @@
+Transaction Oracle table with Analysis
+
+create table:
+>>create table transaction_task(transaction_id number not null,transaction_date date not null,transaction_to varchar(255) not null,transaction_amount number(10) not null,transaction_remarks varchar(100));
+
+>>describe transaction_task
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TRANSACTION_ID                            NOT NULL NUMBER
+ TRANSACTION_DATE                          NOT NULL DATE
+ TRANSACTION_TO                            NOT NULL VARCHAR2(255)
+ TRANSACTION_AMOUNT                        NOT NULL NUMBER(10)
+ TRANSACTION_REMARKS                                VARCHAR2(100)
+
+>>alter table transaction_task add primary key(transaction_id);
+
+>>create sequence transactionSeq start with 500001 increment by 1;
+
+Sequence created.
+
+>>select * from transaction_task;
+
+1.Filter based on given ranges of date
+>>create view filterONDate as select * from transaction_task where transaction_date between '01Feb2024' and '04Feb2024';
+
+View created.
+
+SQL> select * from filterONDate;
+
+TRANSACTI
+---------
+TRANSACTION_TO
+--------------------------------------------------------------------------------
+TRANSACTION_AMOUNT
+------------------
+TRANSACTION_REMARKS
+--------------------------------------------------------------------------------
+TRANSACTION_ID
+--------------
+01-FEB-24
+Shreya
+             20000
+
+TRANSACTI
+---------
+TRANSACTION_TO
+--------------------------------------------------------------------------------
+TRANSACTION_AMOUNT
+------------------
+TRANSACTION_REMARKS
+--------------------------------------------------------------------------------
+TRANSACTION_ID
+--------------
+education
+       2024021
+
+
+TRANSACTI
+---------
+TRANSACTION_TO
+--------------------------------------------------------------------------------
+TRANSACTION_AMOUNT
+------------------
+TRANSACTION_REMARKS
+--------------------------------------------------------------------------------
+TRANSACTION_ID
+--------------
+04-FEB-24
+Akash
+             79632
+
+TRANSACTI
+---------
+TRANSACTION_TO
+--------------------------------------------------------------------------------
+TRANSACTION_AMOUNT
+------------------
+TRANSACTION_REMARKS
+--------------------------------------------------------------------------------
+TRANSACTION_ID
+--------------
+PG rent
+       2024025
+
+
+2.least amount transferred
+
+>> create view least_amount as select min(transaction_amount) as min_amount from transaction_task;
+
+View created.
+
+SQL> select * from least_amount;
+
+MIN_AMOUNT
+----------
+     20000
+
+
+
+3.maximum amount transferred
+>> create view max_amount as select max(transaction_amount) as max_amount from transaction_task;
+
+View created.
+
+SQL> select * from max_amount;
+
+MAX_AMOUNT
+----------
+     95328
+
+
+
+4.number of transaction made to particular beneficiary
+>> create view transaction_count as select transaction_to, count(*) as count_beneficiary from transaction_task group by transaction_to;
+
+View created.
+
+5.filter based on particular remarks
+>> create view remarks as select transaction_id,transaction_date,transaction_to,transaction_amount from transaction_task where transaction_remarks = 'education';
+
+View created.
+
+SQL> select * from remarks;
+
+TRANSACTION_ID TRANSACTI
+-------------- ---------
+TRANSACTION_TO
+--------------------------------------------------------------------------------
+TRANSACTION_AMOUNT
+------------------
+       2024021 01-FEB-24
+Shreya
+             20000
