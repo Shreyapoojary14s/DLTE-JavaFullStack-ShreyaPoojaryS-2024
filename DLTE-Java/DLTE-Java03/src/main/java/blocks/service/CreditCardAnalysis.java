@@ -1,14 +1,21 @@
 package blocks.service;
 
-import java.util.Scanner;
-java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.util.Date;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CreditCardAnalysis {
-    public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
-        CreditCard[] myBank={
-                new CreditCard(5852478565L)
-        }
-    }
+    private Long creditCardNumber;
+    private String creditCardHolder;
+    private Date creditCardExpiry;
+    private Integer creditCardCvv;
+    private Integer creditCardLimit;
+    private Date dateOfBillGeneration;
+    private Date dateOfBillPayment;
+    private Integer creditCardPin;
 }

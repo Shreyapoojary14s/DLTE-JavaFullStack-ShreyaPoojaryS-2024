@@ -1,5 +1,4 @@
 Transaction Oracle table with Analysis
-
 create table:
 >>create table transaction_task(transaction_id number not null,transaction_date date not null,transaction_to varchar(255) not null,transaction_amount number(10) not null,transaction_remarks varchar(100));
 
