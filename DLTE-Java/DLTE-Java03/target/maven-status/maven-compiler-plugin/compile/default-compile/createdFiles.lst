@@ -1,1 +1,6 @@
+blocks\service\CreditCardAnalysis.class
+blocks\service\CustomerSupport.class
+blocks\service\Bonds.class
+blocks\service\MyBond.class
+blocks\service\Transaction.class
 blocks\service\App.class

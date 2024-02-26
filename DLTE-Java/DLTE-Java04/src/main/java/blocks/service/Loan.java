@@ -1,4 +1,10 @@
 package blocks.service;
 
-public class Loan {
+public interface Loan {
+    Loan loan[]=new Loan[30];
+    void addLoans();
+    void checkLoans();
+    void closedLoans();
+
+   // String getLoanStatus();
 }
