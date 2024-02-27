@@ -1,0 +1,9 @@
+create or replace trigger check_marks
+before insert on transactionanalysis
+for each row
+begin
+	if:new.transaction_remark is null then: new.transaction_remark :='hospital';
+	end if;
+    end;
+/
+insert into transaction_task values('6Feb2024','shreya',5000,'dairy',45);
