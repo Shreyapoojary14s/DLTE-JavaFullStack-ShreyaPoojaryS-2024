@@ -1,26 +1,34 @@
 package blocks.service;
 
-public class Gpay extends DebitCard{
-    //init
-    String billName="Siri";
-    Integer pinsecond=779696;
-    String billerType="Savings";
-    //validation
-    public boolean validatePin(Integer secondPin){
-        if(pinsecond.equals(secondPin))
-            return true;
-        return false;
+import java.util.Scanner;
+
+public class Gpay{
+
+    private int upiPin;
+    private String username;
+
+    public Gpay(int i, String harry123) {
     }
-    //payments
-    public void makePayment(Double paymentAmount) {
-        if (super.getAccountBalance() - paymentAmount >= 0) {
-            super.setAccountBalance(super.getAccountBalance() - paymentAmount);
-            System.out.println("Amount has been transferred from\t"+ getAccountNumber() + ".\tRemaining balance is" + getAccountBalance());
-            System.exit(0);
+
+
+
+
+    public void GPay(int upiPin, String username) {
+        this.upiPin = upiPin;
+        this.username = username;
+    }
+
+    public void payBill(String billerName, Double billedAmount, String billerType) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your UPI pin");
+        int pin = scanner.nextInt();
+        if (pin == 6543) {
+            System.out.println("Bill of "+billedAmount+" to "+billerName+" and "+billerType+" successful");
         } else {
-            System.out.println("Insufficient fund");
+            System.out.println("Bill payment not successful");
         }
-
-
     }
 }
+
+
