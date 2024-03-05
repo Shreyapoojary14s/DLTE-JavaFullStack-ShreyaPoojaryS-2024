@@ -8,9 +8,7 @@ public class Transactions {
     private Integer amountInTransaction;
     private String toWhom;
     private String remarks;
-
-
-
+    //constructor
     public Transactions(Date dateOfTransaction, Integer amountInTransaction, String toWhom, String remarks){
         this.amountInTransaction = amountInTransaction;
         this.toWhom = toWhom;
@@ -18,35 +16,28 @@ public class Transactions {
         this.dateOfTransaction=dateOfTransaction;
 
     }
-
+//getter setter
     public Date getDateOfTransaction() {
         return dateOfTransaction;
     }
-
     public void setDateOfTransaction(Date dateOfTransaction) {
        this.dateOfTransaction=dateOfTransaction;
     }
-
     public Integer getAmountInTransaction() {
         return amountInTransaction;
     }
-
     public void setAmountInTransaction(Integer amountInTransaction) {
         this.amountInTransaction = amountInTransaction;
     }
-
     public String getToWhom() {
         return toWhom;
     }
-
     public void setToWhom(String toWhom) {
         this.toWhom = toWhom;
     }
-
     public String getRemarks() {
         return remarks;
     }
-
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }

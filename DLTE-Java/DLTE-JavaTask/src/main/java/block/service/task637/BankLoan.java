@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class MyBankLoan implements  MyBank{
+public class BankLoan implements  MyBank{
         ArrayList<LoanEntity> loansEntity=loan;
         @Override
         public void writeIntoFile() throws IOException {
@@ -101,7 +101,7 @@ public class MyBankLoan implements  MyBank{
         }
 
         public static void main(String[] args) {
-            MyBankLoan customers=new MyBankLoan();
+            BankLoan customers=new BankLoan();
 
             LoanEntity  loanOne=new LoanEntity(7852121L,8520L,new Date(2024,01,25),"Open","Asha",9889632158L);
             LoanEntity  loanTwo=new LoanEntity(11111111L,963300L,new Date(2024,02,06),"Close","Siri",8520485236L);
@@ -127,6 +127,7 @@ public class MyBankLoan implements  MyBank{
                         break;
                     case 3:customers.checkClosedLoan();
                         break;
+                    default:System.exit(0);
                 }
             }
         }
