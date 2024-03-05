@@ -1,4 +1,5 @@
 blocks\service\Loan.class
+blocks\service\MyLoan.class
 blocks\service\LoanProducts.class
 blocks\service\DebitCard.class
 blocks\service\Gpay.class

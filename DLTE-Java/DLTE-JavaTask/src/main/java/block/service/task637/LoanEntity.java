@@ -1,16 +1,17 @@
 package block.service.task637;
-import java.io.Serializable;
 import java.util.Date;
+import java.io.Serializable;
 
-
-public class Loan implements Serializable{
+public class LoanEntity implements Serializable{
         private Long loanNumber;
         private Long loanAmount;
         private Date loanDate;
         private String loanStatus;
         private String borrowerName;
         private Long borrowerContact;
-    public Loan(Long loanNumber, Long loanAmount, Date loanDate, String loanStatus, String borrowerName, Long borrowerContact) {
+
+        //constructor
+    public LoanEntity(Long loanNumber, Long loanAmount, Date loanDate, String loanStatus, String borrowerName, Long borrowerContact) {
         this.loanNumber = loanNumber;
         this.loanAmount = loanAmount;
         this.loanDate = loanDate;
@@ -18,7 +19,7 @@ public class Loan implements Serializable{
         this.borrowerName = borrowerName;
         this.borrowerContact = borrowerContact;
     }
-
+//tostring method
     @Override
     public String toString() {
         return "Loan{" +
@@ -30,7 +31,7 @@ public class Loan implements Serializable{
                 ", borrowerContact=" + borrowerContact +
                 '}';
     }
-
+//getter setter
         public Long getLoanNumber() {
             return loanNumber;
         }
