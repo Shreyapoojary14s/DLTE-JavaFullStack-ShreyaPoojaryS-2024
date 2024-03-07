@@ -1,0 +1,4 @@
+Mar 07, 2024 10:49:22 AM blocks.service.log.LogFileHandle main
+INFO: Logging to a text file
+Mar 07, 2024 10:49:43 AM blocks.service.log.LogFileHandle main
+INFO: Logging to a text file

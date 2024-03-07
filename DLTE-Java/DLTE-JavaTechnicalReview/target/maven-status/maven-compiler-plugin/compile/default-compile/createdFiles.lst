@@ -1,1 +1,6 @@
+blocks\service\employeedetail\Employee.class
+blocks\service\EmployeeDetails.class
+blocks\service\Employee.class
+blocks\service\employeedetail\EmployeeAddress.class
+blocks\service\employeedetail\EmpInterface.class
 blocks\service\App.class

@@ -1,12 +1,13 @@
-//package block.service.task468;
-//
-//import java.util.ResourceBundle;
-//
-//public class MyBankCreditCardException {
-//    public MyBankCreditCardException(){
-//        super(ResourceBundle.getBundle("card").getString("exception.creditcard"));
-//
-//    }
-//
-//}
+package block.service.task468;
+
+import java.util.ResourceBundle;
+import static java.util.ResourceBundle.*;
+
+public class MyBankCreditCardException extends Throwable {
+    public MyBankCreditCardException(){
+        super(getBundle("creditcard").getString("exception.creditcard"));
+
+    }
+
+}
 

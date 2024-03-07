@@ -63,7 +63,7 @@ public class Transactionananlysis implements Runnable {
         }
     }
 
-//leasrt amount
+//least amount
     public void leastAmountTransferred(Transactions[] transactions){
         int leastAmounts=Integer.MAX_VALUE;
         for(Transactions each:transactions){

@@ -1,7 +1,11 @@
 package blocks.service.employeedetail;
 
-//import java.util.ArrayList;
+import blocks.service.Employee;
+import blocks.service.EmployeeAddress;
+import blocks.service.EmployeeRepository;
+
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -12,9 +16,10 @@ public class EmployeeDetails {
 
         Scanner scanner = new Scanner(System.in);
         int option;
+        EmployeeRepository employeeRepository=new EmployeeRepository();
+      //  EmployeeDetails employeeDetails= new EmployeeDetails();
 
-        EmployeeDetails employeeDetails= new EmployeeDetails();
-        ArrayList<Employee> EmployeeDetails=new ArrayList<>();
+        ArrayList<Employee> arrayemp=new ArrayList<>();
         System.out.println("*************** Wel Come ******************");
         System.out.println("Enter number of Employees");
         int numberOfEmployees = scanner.nextInt();
@@ -23,28 +28,13 @@ public class EmployeeDetails {
         option=scanner.nextInt();
 
         switch (option){
-
             case 1 :
-                try{
-
                     for (int index=0;index<numberOfEmployees;index++) {
                         employees[index]=readEmployee();
-                    }
-                    System.out.println("Do you want enter onemore employee details(1/2):");
-                   option=scanner.nextInt();
-                   if(option==1){
-
-                   }
-
-
+                        arrayemp.add(employees[index]);
                 }
-                catch(Exception e){
-
-
-
-                }
-
-               break;
+                employeeRepository.writeIntoFile(arrayemp);
+                    break;
 
 
 
@@ -56,11 +46,17 @@ public class EmployeeDetails {
              //   ArrayList<Employee>=new ArrayList<>();
 
                    try{
-                       employeeDetails.displayDetails(employees);
+                      // employeeDetails.displayDetails(employees);
+                     // employeeRepository.writeIntoFile(arrayemp);
+                      ArrayList<Objects>emp;
+                      emp=employeeRepository.readFromFile();
+                       System.out.println(emp.size());
+                       System.out.println(emp);
                    }
                    catch(Exception e ){
                 System.out.println("No Employee details to display");
             }
+
             case 3:
                 System.exit(0);
             default:
@@ -141,9 +137,7 @@ public class EmployeeDetails {
         return matcher.matches();
 
     }
-//    public  static void verify{
-//
-//    }
+
 
 
 
