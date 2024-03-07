@@ -14,6 +14,7 @@ public class TransactionAnalysis implements Runnable {
                 new Transactions(new Date(2021, 8, 24), 50000, "Shreya", "Friend"),
         };
         public  void run() {
+            //initiate lock
             execute.lock();
             TransactionAnalysis analysis = new TransactionAnalysis();
             int choice;
@@ -46,6 +47,7 @@ public class TransactionAnalysis implements Runnable {
                         return;
 
                 }
+                //end lock
                 execute.unlock();
             }
 
@@ -54,7 +56,7 @@ public class TransactionAnalysis implements Runnable {
         public void rangeBasedOnDates(Transactions[] transactions){
             String StartDateInput;
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter start range date dd/mm/yyyy format");
+            System.out.println("Enter start range date DD/MM/YYYY format");
             StartDateInput=scanner.next();
             String splitStartDate[]=StartDateInput.split("/");
             for(Transactions each: transactions){
@@ -65,7 +67,8 @@ public class TransactionAnalysis implements Runnable {
 
             }
 
-        } //selection sort based on amount in ascending
+        }
+        //selection sort based on amount in ascending
     public void SortAmount(Transactions[] transactions){
         Transactions temporary=null;
         for(int index=0;index<transactions.length-1;index++){
@@ -141,6 +144,12 @@ public class TransactionAnalysis implements Runnable {
         public void SortBeneficiary(Transactions[] transactions){
             Transactions temporary=null;
             for(int index=0;index<transactions.length-1;index++){
+//                int maximumIndex=index;
+//                String maximumString=transactions[index].getTo();
+//                for(int next=index+1;next<transactions.length;next++){
+//                    if(transactions[next].getTo().compareTo(maximumString)>0){
+//                        maximumString=transactions[next].getTo();
+//                        maximumIndex=next;
                 int maximumIndex=index;
                 String maximumString=transactions[index].getTo();
                 for(int next=index+1;next<transactions.length;next++){
@@ -153,7 +162,14 @@ public class TransactionAnalysis implements Runnable {
                     temporary=transactions[maximumIndex];
                     transactions[maximumIndex]=transactions[index];
                     transactions[index]=temporary;
+
                 }
+//                if(maximumIndex=index){
+//                    temporary=transactions[maximumIndex];
+//                    transactions[maximumIndex]=transactions[index];
+//                    transactions[index]=temporary;
+//
+//                }
             }
         }
 
