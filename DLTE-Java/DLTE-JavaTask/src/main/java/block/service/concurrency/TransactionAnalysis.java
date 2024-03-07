@@ -65,8 +65,27 @@ public class TransactionAnalysis implements Runnable {
 
             }
 
+        } //selection sort based on amount in ascending
+    public void SortAmount(Transactions[] transactions){
+        Transactions temporary=null;
+        for(int index=0;index<transactions.length-1;index++){
+            int minimumIndex=index;
+            int minimumAmount=transactions[index].getAmount();
+            for(int next=index+1;next<transactions.length;next++){
+                if(transactions[next].getAmount()<minimumAmount){
+                    minimumAmount=transactions[next].getAmount();
+                    minimumIndex=next;
+                }
+            }
+            if(minimumIndex!=index){
+                temporary=transactions[minimumIndex];
+                transactions[minimumIndex]=transactions[index];
+                transactions[index]=temporary;
+            }
         }
-        //least money transferred by the person
+    }
+
+    //least money transferred by the person
         public void leastAmountTransferred(Transactions[] transactions){
             int leastAmounts=Integer.MAX_VALUE;
             for(Transactions each:transactions){
@@ -133,25 +152,6 @@ public class TransactionAnalysis implements Runnable {
                 if(maximumIndex!=index){
                     temporary=transactions[maximumIndex];
                     transactions[maximumIndex]=transactions[index];
-                    transactions[index]=temporary;
-                }
-            }
-        }
-        //selection sort based on amount in ascending
-        public void SortAmount(Transactions[] transactions){
-            Transactions temporary=null;
-            for(int index=0;index<transactions.length-1;index++){
-                int minimumIndex=index;
-                int minimumAmount=transactions[index].getAmount();
-                for(int next=index+1;next<transactions.length;next++){
-                    if(transactions[next].getAmount()<minimumAmount){
-                        minimumAmount=transactions[next].getAmount();
-                        minimumIndex=next;
-                    }
-                }
-                if(minimumIndex!=index){
-                    temporary=transactions[minimumIndex];
-                    transactions[minimumIndex]=transactions[index];
                     transactions[index]=temporary;
                 }
             }
