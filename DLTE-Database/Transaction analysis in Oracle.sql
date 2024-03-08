@@ -1,4 +1,4 @@
-//Transaction ananlysis 
+--Transaction ananlysis 
 
 Filter based on given range of date
 >>create view filter_date as select * from transaction where transaction_date between '01-04-24' and '01-05-24';
