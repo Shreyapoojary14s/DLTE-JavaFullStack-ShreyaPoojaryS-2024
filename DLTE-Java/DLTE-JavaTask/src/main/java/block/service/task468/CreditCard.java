@@ -3,34 +3,41 @@ package block.service.task468;
 import java.util.Date;
 
 public class CreditCard {
-    private  Long CreditNumber;
+//    private  Long CreditNumber;
+//    private String cardHolder;
+//    private Date cardExpiry;
+//    private Integer cardCvv;
+//    private Integer cardLimit;
+//    private Date date;
+//    private Date dateOfBillPayment;
+//    private Integer cardPin;
+
+    private Long cardNumber;
     private String cardHolder;
     private Date cardExpiry;
     private Integer cardCvv;
     private Integer cardLimit;
-    private Date date;
+    private Date dateOfBillGenearation;
     private Date dateOfBillPayment;
-    private Integer cardPin;
+    private Integer creditCardPin;
 
-    public CreditCard(Long creditNumber, String cardHolder, Date cardExpiry, Integer cardCvv, Integer cardLimit, Date date, Date dateOfBillPayment, Integer cardPin) {
-        CreditNumber = creditNumber;
+    public CreditCard(Long cardNumber, String cardHolder, Date cardExpiry, Integer cardCvv, Integer cardLimit, Date dateOfBillGenearation, Date dateOfBillPayment, Integer creditCardPin) {
+        this.cardNumber = cardNumber;
         this.cardHolder = cardHolder;
         this.cardExpiry = cardExpiry;
         this.cardCvv = cardCvv;
         this.cardLimit = cardLimit;
-        this.date = date;
+        this.dateOfBillGenearation = dateOfBillGenearation;
         this.dateOfBillPayment = dateOfBillPayment;
-        this.cardPin = cardPin;
+        this.creditCardPin = creditCardPin;
     }
 
-
-
-    public Long getCreditNumber() {
-        return CreditNumber;
+    public Long getCardNumber() {
+        return cardNumber;
     }
 
-    public void setCreditNumber(Long creditNumber) {
-        CreditNumber = creditNumber;
+    public void setCardNumber(Long cardNumber) {
+        this.cardNumber = cardNumber;
     }
 
     public String getCardHolder() {
@@ -65,12 +72,12 @@ public class CreditCard {
         this.cardLimit = cardLimit;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDateOfBillGenearation() {
+        return dateOfBillGenearation;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDateOfBillGenearation(Date dateOfBillGenearation) {
+        this.dateOfBillGenearation = dateOfBillGenearation;
     }
 
     public Date getDateOfBillPayment() {
@@ -81,11 +88,25 @@ public class CreditCard {
         this.dateOfBillPayment = dateOfBillPayment;
     }
 
-    public Integer getCardPin() {
-        return cardPin;
+    public Integer getCreditCardPin() {
+        return creditCardPin;
     }
 
-    public void setCardPin(Integer cardPin) {
-        this.cardPin = cardPin;
+    public void setCreditCardPin(Integer creditCardPin) {
+        this.creditCardPin = creditCardPin;
+    }
+
+    @Override
+    public String toString() {
+        return "CreditCard{" +
+                "cardNumber=" + cardNumber +
+                ", cardHolder='" + cardHolder + '\'' +
+                ", cardExpiry=" + cardExpiry +
+                ", cardCvv=" + cardCvv +
+                ", cardLimit=" + cardLimit +
+                ", dateOfBillGenearation=" + dateOfBillGenearation +
+                ", dateOfBillPayment=" + dateOfBillPayment +
+                ", creditCardPin=" + creditCardPin +
+                '}';
     }
 }

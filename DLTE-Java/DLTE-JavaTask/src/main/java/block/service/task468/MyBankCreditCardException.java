@@ -4,10 +4,13 @@ import java.util.ResourceBundle;
 import static java.util.ResourceBundle.*;
 
 public class MyBankCreditCardException extends Throwable {
-    public MyBankCreditCardException(){
-        super(getBundle("creditcard").getString("exception.creditcard"));
+//
+public MyBankCreditCardException() {
+    //if the exception occurs message from application.properties is imported and displayed
+    super(ResourceBundle.getBundle("application").getString("exception.creditcard"));
+}
 
-    }
+
 
 }
 
