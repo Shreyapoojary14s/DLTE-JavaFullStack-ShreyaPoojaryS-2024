@@ -5,8 +5,8 @@ create or replace procedure insert_transaction(
     t_date date,
     t_to varchar2,
     t_amount number,
-    t_remark varchar2,
-    infos_op out varchar2
+    t_remark varchar225,
+    infos_op out varchar225
     )
 as
 begin 
@@ -19,7 +19,7 @@ end;
 /
 
 variable infos_op varchar2;
-execute insert_transaction(TRANSACTION_SEQUENCE.nextval,'20-JAN-2020','Shreya',650,'Education',:infos_op);
+execute insert_transaction(TRANSACTION_SEQUENCE.nextval,'20-MAR-2013','Shreya',650,'Education',:infos_op);
 print infos_op;
 
 
@@ -30,7 +30,7 @@ create or replace procedure delete_date(
   as
   begin 
    delete from transactions_task where transaction_date=enter_date;
-   err_info:='no error';
+   err_info:='no erroe';
   exception
    when others then
    err_info:='error due to'||SQLERRM;
@@ -39,9 +39,9 @@ END;
 
 
 
-52
+
 variable err_info varchar2;
-execute delete_date('22-FEB-2022',:err_info);
+execute delete_date('02-FEB-2020',:err_info);
 
 
 create or replace procedure filter_transactions(
@@ -53,7 +53,7 @@ as
  filter_err:='done';
  exception
   when no_data_found then
-  filter_err:='No data ';
+  filter_err:='No data found';
   when others then
   filter_err:='error due to'||SQLERRM;
 end;
