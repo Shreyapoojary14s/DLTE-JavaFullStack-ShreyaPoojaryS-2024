@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class DynamicStorage {
     static ArrayList<Transactions> transactionsList = new ArrayList<>();
     public static void main(String[] args) {
-      //  Transactions transactions1 = new Transactions(new Date("05/20/2024"), 50, "Prabhanjan", "Friend");
+      // Transactions transactions1 = new Transactions(new Date("05/20/2024"), 50, "Prabhanjan", "Friend");
             Transactions transactions1 = new Transactions(new Date("05/20/2024"), 50, "Prabhanjan", "Friend");
             Transactions transactions2 = new Transactions(new Date("09/20/2024"), 550, "Shobhit", "Education");
             Transactions transactions3 = new Transactions(new Date("05/28/2024"), 9500, "Shreya", "Education");
@@ -20,7 +20,7 @@ public class DynamicStorage {
             Scanner scanner = new Scanner(System.in);
             //menu
             while (true) {
-                System.out.println("1)Least amount transferred\n" + "2)Maximum amount transferred\n" + "3)Filtering based on particular remark\n" + "4)Sort in descending on beneficiary \n");
+                System.out.println("1)Least amount transferred\n" + "2)Maximum amount transferred\n" + "3)Filtering based on date\n" + "4)Sort in descending on beneficiary \n");
                 option= scanner.nextInt();
               //menu
                 switch (option) {
@@ -37,7 +37,8 @@ public class DynamicStorage {
                         Date endDate=new Date(scanner.next());
                         rangeOfDate(startDate,endDate);
                         break;
-                    case 4://enter property and order
+                    case 4:
+                        //enter property and order
                         System.out.println("To sort based on choice enter property:order (no space)");
                         String propertyOrder=scanner.next();
                         TransactionComparator compare=new TransactionComparator(propertyOrder);
@@ -58,7 +59,6 @@ public class DynamicStorage {
         rangeByDateList.forEach(Transactions->{
             System.out.println(Transactions.toString());
         } );
-
     }
     //Least amount
         public static void leastAmountTransferred() {
