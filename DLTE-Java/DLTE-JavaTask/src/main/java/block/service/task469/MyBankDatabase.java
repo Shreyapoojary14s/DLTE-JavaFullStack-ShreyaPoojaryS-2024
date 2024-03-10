@@ -1,8 +1,10 @@
 package block.service.task469;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyBankDatabase<T> implements  GenericsActivity<T> {
+    public ArrayList<Object> dataList;
     T[] myObjects;
     @Override
     public String insertNewRecord(Object objects) {
@@ -52,4 +54,13 @@ public class MyBankDatabase<T> implements  GenericsActivity<T> {
         else
             System.out.println(object+" hasn't updated at "+index);
     }
+
+    //public boolean create(T creditCard1) {
+    //}
+
+    public void writeIntoFile() {
+    }
+
+  //  public  readFromFile() {
+  //  }
 }
