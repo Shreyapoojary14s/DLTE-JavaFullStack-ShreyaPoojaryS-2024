@@ -1,6 +1,6 @@
 --Before normalization
 
-create table mybank_recharge_before_norm(username varchar(255), upi varchar(20), mobile_number number(13), email varchar(255), wallet_type varchar(10), recharged_date date, recharged_provider varchar(255), recharged_to varchar(255), recharged_amount number);
+create table Normalisation(username varchar(255), upi varchar(20), mobile_number number(13), email varchar(255), wallet_type varchar(10), recharged_date date, recharged_provider varchar(255), recharged_to varchar(255), recharged_amount number);
 
 Table created.
 
