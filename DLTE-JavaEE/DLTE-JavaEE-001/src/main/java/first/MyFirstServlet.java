@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-@WebServlet("/first/api/")
+//@WebServlet("/first/api/")   // package!= url
+@WebServlet("/task/api/")
 public class MyFirstServlet extends HttpServlet {
     Logger logger;
 

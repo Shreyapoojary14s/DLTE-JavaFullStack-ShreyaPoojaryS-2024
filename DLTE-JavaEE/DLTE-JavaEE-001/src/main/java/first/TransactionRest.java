@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 //servlet class and mapping
-    @WebServlet("first/rest/transaction/*")
+    @WebServlet("/rest/transaction/") //no package name
     //extends inbuilt HttpServlets
     public class TransactionRest extends HttpServlet {
         ArrayList<Transactions> allTransaction= (ArrayList<Transactions>) Stream.of(
@@ -66,7 +66,7 @@ import java.util.stream.Stream;
             Transactions transactions=gson.fromJson(req.getReader(),Transactions.class);
             allTransaction.add(transactions);
             resp.setStatus(HttpServletResponse.SC_OK);//setting response to Ok=200
-            resp.getWriter().println("to" + transactions.getToWhom()+ "******Successfully transaction done******");
+            resp.getWriter().println("to" + transactions.getToWhom()+ "\n******Successfully transaction done******");
         }
 
 }

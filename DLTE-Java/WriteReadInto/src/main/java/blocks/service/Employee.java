@@ -1,80 +1,91 @@
 package blocks.service;
 
-import java.io.NotSerializableException;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 
-public class Employee implements Serializable {
-    private Long employeeID;
-    private String employeeName;
-    private String employeeEmail;
-    private Long employeeMobile;
-    //    private String employeeTemporaryAddress;
-//    private String employeePermanentAddress;
-    private EmployeeAddress employeeTemporaryAddress;
-    private EmployeeAddress employeePermanentAddress;
+    public class Employee implements Serializable {
+        private String firstName;
+        private String middeName;
+        private String lastName;
+        private Long employeePhone;
+        private Integer employeeId;
+        private String email;
 
-    public Employee() {
-    }
+        //constructors
 
+        public Employee(){}
 
-    public Employee(Long employeeID, String employeeName, String employeeEmail, Long employeeMobile, EmployeeAddress employeeTemporaryAddress, EmployeeAddress employeePermanentAddress) {
-        this.employeeID = employeeID;
-        this.employeeName = employeeName;
-        this.employeeEmail = employeeEmail;
-        this.employeeMobile = employeeMobile;
-        this.employeeTemporaryAddress = employeeTemporaryAddress;
-        this.employeePermanentAddress = employeePermanentAddress;
-    }
+        public Employee(String firstName, String middeName, String lastName, Long employeePhone, Integer employeeId, String email) {
+            this.firstName = firstName;
+            this.middeName = middeName;
+            this.lastName = lastName;
+            this.employeePhone = employeePhone;
+            this.employeeId = employeeId;
+            this.email = email;
+        }
 
-
-
-    public Long getEmployeeID() {
-        return employeeID;
-    }
-
-    public void setEmployeeID(Long employeeID) {
-        this.employeeID = employeeID;
-    }
-
-    public String getEmployeeName() {
-        return employeeName;
-    }
-
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
-    }
-
-    public String getEmployeeEmail() {
-        return employeeEmail;
-    }
-
-    public void setEmployeeEmail(String employeeEmail) {
-        this.employeeEmail = employeeEmail;
-    }
-
-    public Long getEmployeeMobile() {
-        return employeeMobile;
-    }
-
-    public void setEmployeeMobile(Long employeeMobile) {
-        this.employeeMobile = employeeMobile;
-    }
+//getters and setters
 
 
-    public EmployeeAddress getEmployeeTemporaryAddress() {
-        return employeeTemporaryAddress;
-    }
+        public String getEmail() {
+            return email;
+        }
 
-    public void setEmployeeTemporaryAddress(EmployeeAddress employeeTemporaryAddress) {
-        this.employeeTemporaryAddress = employeeTemporaryAddress;
-    }
+        public void setEmail(String email) {
+            this.email = email;
+        }
 
-    public EmployeeAddress getEmployeePermanentAddress() {
-        return employeePermanentAddress;
-    }
+        public String getFirstName() {
+            return firstName;
+        }
 
-    public void setEmployeePermanentAddress(EmployeeAddress employeePermanentAddress) {
-        this.employeePermanentAddress = employeePermanentAddress;
-    }
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public String getMiddeName() {
+            return middeName;
+        }
+
+        public void setMiddeName(String middeName) {
+            this.middeName = middeName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+
+        public Long getEmployeePhone() {
+            return employeePhone;
+        }
+
+        public void setEmployeePhone(Long employeePhone) {
+            this.employeePhone = employeePhone;
+        }
+
+        public Integer getEmployeeId() {
+            return employeeId;
+        }
+
+        public void setEmployeeId(Integer employeeId) {
+            this.employeeId = employeeId;
+        }
+
+        @Override
+        public String toString() {
+            return
+                    "First Name='" + firstName + '\'' +
+                            ",Midde Name='" + middeName + '\'' +
+                            ",LastName='" + lastName + '\'' +
+                            ", Employee Phone=" + employeePhone +
+                            ", Employee Id=" + employeeId +
+                            ", email='" + email + '\'' ;
+        }
+
 
 }
