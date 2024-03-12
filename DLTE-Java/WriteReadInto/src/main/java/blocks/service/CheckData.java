@@ -5,16 +5,12 @@ package blocks.service;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-    public abstract class CollectCheckData {
+    public abstract class CheckData {
         String email;
         Long phone=0L;
-        //abstract to collect personal data
         public abstract void collectPersonalData(Employee employee);
-        //abstract to display those data
         public abstract void displayData();
-        //to collect address
         public abstract Address collectAddress(int id);
-        //validate email address
         public boolean validateEmail() {
             String emailRegex = "^[A-Za-z0-9+-_]{3,}@[A-Za-z]{3,}(.)[A-Za-z]{2,}";
             Pattern pattern = Pattern.compile(emailRegex);
@@ -25,7 +21,6 @@ import java.util.regex.Pattern;
                 return false;
             }
         }
-        //validate phone number
         public boolean validatePhone(){
             String phoneRegex = "^[0-9]{10}";
             Pattern pattern = Pattern.compile(phoneRegex);

@@ -10,13 +10,11 @@ public class App {
 //    System.out.println(obj.getEmail().equals("d"));
 
 }
-/**public EmployeeDetails nullPointer(){
-        EmployeeDetails obj=new EmployeeDetails();
 
-
-    break;
-
-
-}*/
 
 //}
+
+
+
+
+

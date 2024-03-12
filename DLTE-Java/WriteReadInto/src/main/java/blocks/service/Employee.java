@@ -12,21 +12,16 @@ import java.util.ArrayList;
         private Integer employeeId;
         private String email;
 
-        //constructors
-
         public Employee(){}
 
-        public Employee(String firstName, String middeName, String lastName, Long employeePhone, Integer employeeId, String email) {
+        public Employee(String firstName, String middleName, String lastName, Long employeePhone, Integer employeeId, String email) {
             this.firstName = firstName;
-            this.middeName = middeName;
+            this.middeName = middleName;
             this.lastName = lastName;
             this.employeePhone = employeePhone;
             this.employeeId = employeeId;
             this.email = email;
         }
-
-//getters and setters
-
 
         public String getEmail() {
             return email;
@@ -44,11 +39,11 @@ import java.util.ArrayList;
             this.firstName = firstName;
         }
 
-        public String getMiddeName() {
+        public String getMiddleName() {
             return middeName;
         }
 
-        public void setMiddeName(String middeName) {
+        public void setMiddleName(String midleName) {
             this.middeName = middeName;
         }
 

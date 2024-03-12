@@ -4,7 +4,6 @@ package blocks.service;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Objects;
 
     public class ReadWriteEmployee {
@@ -26,7 +25,6 @@ import java.util.Objects;
         }
         public ArrayList<Object> readFromFile(){
             try{
-                //Employee employee=new Employee();
                 ArrayList<Object> arry=new ArrayList<>();
                 FileInputStream fileInputStream=new FileInputStream("C:\\Users\\xxnlnnpa\\Documents\\DLTE-JAVA-FULLSTACK-AKASH-2024\\DLTE-Java\\Review2\\EmployeeDetails.doc");
                 ObjectInputStream objectInputStream=new ObjectInputStream(fileInputStream);
