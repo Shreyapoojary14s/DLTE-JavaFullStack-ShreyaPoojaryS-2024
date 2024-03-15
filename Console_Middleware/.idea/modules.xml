@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Console_Middleware.iml" filepath="$PROJECT_DIR$/.idea/Console_Middleware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Console_Middleware/Console_Middleware.iml" filepath="$PROJECT_DIR$/Console_Middleware/Console_Middleware.iml" />
     </modules>
   </component>
 </project>

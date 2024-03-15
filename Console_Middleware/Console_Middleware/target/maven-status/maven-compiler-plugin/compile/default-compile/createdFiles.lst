@@ -1,0 +1,4 @@
+console\middleware\App.class
+console\middleware\Address.class
+console\middleware\Validation.class
+console\middleware\Personal.class
