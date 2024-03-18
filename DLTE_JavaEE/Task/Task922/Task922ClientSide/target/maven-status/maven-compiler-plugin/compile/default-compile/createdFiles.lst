@@ -1,0 +1,8 @@
+web\GroupOfTransactions.class
+web\TransactionsSoap.class
+web\Transaction.class
+web\package-info.class
+web\ObjectFactory.class
+org\example\App.class
+web\Date.class
+web\TransactionsSoapService.class
