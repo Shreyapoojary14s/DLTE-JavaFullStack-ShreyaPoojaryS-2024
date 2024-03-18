@@ -21,7 +21,7 @@ public class MyFirstServlet extends HttpServlet {
         String requestIntrestRate = req.getParameter("Intrest rate");
         String requestPeriod = req.getParameter("Period");
         String requestRegime = req.getParameter("Regime");
-        String requestIncome = req.getParameter("AnnualIncome");
+        String requestIncome = req.getParameter("3+");
        double total = 0;
        // double remain = 2;
 
