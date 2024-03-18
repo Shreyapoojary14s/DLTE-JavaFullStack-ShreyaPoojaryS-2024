@@ -12,10 +12,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Date;
 import java.util.List;
 
-@WebServlet("/app/findallbybyuser/*")
-public class FindAllByUserService extends HttpServlet {
+@WebServlet("/findallbydateuser")
+public class FindAllByDateUser extends HttpServlet {
     private TransactionService transactionService;
 
     @Override
@@ -23,15 +24,21 @@ public class FindAllByUserService extends HttpServlet {
         StorageTarget storageTarget=new DatabaseTarget();
         transactionService=new TransactionService(storageTarget);
     }
-//http://localhost:7001/Task848/app/findallbybyuser?user=elroy
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //parameters
         String requestUser =req.getParameter("user");
+        String requestStartDate=req.getParameter("startdate");
+        String requestEndDate=req.getParameter("enddate");
+        //json format
+
         resp.setContentType("application/json");
         try {
-            List<Transaction> transactions=transactionService.callViewTransaction(requestUser);
+            List<Transaction> transactions=transactionService.callFindByDate(requestUser,requestStartDate,requestEndDate);
             Gson gson=new Gson();
             String responseData= gson.toJson(transactions);
+            //status code successful
             resp.setStatus(HttpServletResponse.SC_OK);
             resp.getWriter().println(responseData);
         }catch (Exception e){
@@ -39,5 +46,4 @@ public class FindAllByUserService extends HttpServlet {
 
         }
     }
-
 }

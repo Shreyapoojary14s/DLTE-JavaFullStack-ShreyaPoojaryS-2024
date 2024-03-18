@@ -1,6 +1,5 @@
 package dao.servlets;
 
-import app.mybank.entity.Account;
 import app.mybank.entity.Transaction;
 import app.mybank.middleware.DatabaseTarget;
 import app.mybank.remotes.StorageTarget;
@@ -14,9 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-
-@WebServlet("/app/createAccount")
-public class CreateAccount extends HttpServlet {
+//mapping servlets
+@WebServlet("/findAllByUser")
+public class FindAllByTypeUser extends HttpServlet {
     private TransactionService transactionService;
 
     @Override
@@ -24,25 +23,23 @@ public class CreateAccount extends HttpServlet {
         StorageTarget storageTarget=new DatabaseTarget();
         transactionService=new TransactionService(storageTarget);
     }
-    //localhost:7001/Task848/app/createAccount
-//    {
-//        "userName": "roy",
-//            "password": "1234",
-//            "email": "roy@gmail.com",
-//            "phoneNumber": 1234356789
-//    }
+
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //parameters
+        String requestUser=req.getParameter("user");
+        String requestType=req.getParameter("type");
         resp.setContentType("application/json");
-        try {
+        try{
+            List<Transaction> transactions = transactionService.callFindByType(requestUser,requestType);
             Gson gson=new Gson();
-            Account account=gson.fromJson(req.getReader(),Account.class);
-            transactionService.callSaveAccount(account);
+            String responseData= gson.toJson(transactions);
             resp.setStatus(HttpServletResponse.SC_OK);
-            resp.getWriter().println("Account is successfully created");
-        }     catch(NumberFormatException numberFormatException){
-            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            resp.getWriter().println(numberFormatException);
+            resp.getWriter().println(responseData);
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+
         }
     }
 }

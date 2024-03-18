@@ -1,10 +1,9 @@
 package dao.servlets;
 
-import app.mybank.entity.Transaction;
+import app.mybank.entity.Account;
 import app.mybank.middleware.DatabaseTarget;
 import app.mybank.remotes.StorageTarget;
 import app.mybank.services.TransactionService;
-import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,10 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet("/app/findall/*")
-public class FindAll extends HttpServlet {
+@WebServlet("/login")
+public class Login extends HttpServlet {
     private TransactionService transactionService;
 
     @Override
@@ -23,17 +21,26 @@ public class FindAll extends HttpServlet {
         StorageTarget storageTarget=new DatabaseTarget();
         transactionService=new TransactionService(storageTarget);
     }
-    //http://localhost:7001/Task848/app/findall
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+//parameters
+        String requestUser=req.getParameter("user");
+        String requestPassword=req.getParameter("password");
         resp.setContentType("application/json");
-        try {
-            List<Transaction> transactions=transactionService.callViewAllTransaction();
-            Gson gson=new Gson();
-            String responseData= gson.toJson(transactions);
-            resp.setStatus(HttpServletResponse.SC_OK);
-            resp.getWriter().println(responseData);
+        try{
+            Boolean account = transactionService.verifyAccount(requestUser,requestPassword);
+            if(account==true){
+                //successful
+                resp.setStatus(HttpServletResponse.SC_OK);
+                resp.getWriter().println("Login Successfull");
+            }
+            else {
+                //not found
+                resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
+                resp.getWriter().println("Account not found");
+            }
+
         }catch (Exception e){
             System.out.println(e.getMessage());
 
