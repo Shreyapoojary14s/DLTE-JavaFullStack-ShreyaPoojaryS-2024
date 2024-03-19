@@ -2,78 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf183277-710a-4716-9c03-ed3234ea39b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/Console_Middleware.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_3_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/libraries/Maven__ch_qos_logback_logback_core_1_3_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/Console_Middleware.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/src/main/java/console/middleware/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/src/main/java/console/middleware/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/src/main/java/console/middleware/Personal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/src/main/java/console/middleware/Validation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/src/test/java/console/middleware/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/Console_Middleware-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/classes/console/middleware/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/classes/console/middleware/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/classes/console/middleware/Personal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/classes/console/middleware/Validation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/surefire-reports/TEST-console.middleware.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/surefire-reports/console.middleware.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Middleware/Console_Middleware/target/test-classes/console/middleware/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/src/main/java/block/services/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Console_Teach/src/test/java/block/services/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/src/main/java/databasetech/service/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/src/test/java/databasetech/service/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/DAO_tech-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/classes/databasetech/service/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/surefire-reports/TEST-databasetech.service.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/surefire-reports/databasetech.service.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/DAO_tech/target/test-classes/databasetech/service/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/src/main/java/block/console/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/src/test/java/block/console/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Middleware_Tech/Tech_Console/target/classes/block/console/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/GroupOfTransactions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/GroupOfTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/GroupOfTransactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/TransactionsSoap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/TransactionsSoapService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/GroupOfTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/GroupOfTransactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/SoapEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/SoapEndpoints.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -161,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710783831372</updated>
       <workItem from="1710783834344" duration="2059000" />
-      <workItem from="1710820516714" duration="10853000" />
+      <workItem from="1710820516714" duration="11493000" />
     </task>
     <servers />
   </component>
@@ -176,26 +120,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="273" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1710832177504" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1710828977698">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1710859371602">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1710859371602" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1710864851883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1710786569527" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1710828977698" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1710828977698">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1710864851883" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1710864851882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1710786569527" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1710828977698" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1710828977698">
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1710864851882" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1710864851882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1710786569527" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1710828977698" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1710828977698">
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1710864851882" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1710864851883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1710786569527" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1710828977698" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1710864851883" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1710784134443">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

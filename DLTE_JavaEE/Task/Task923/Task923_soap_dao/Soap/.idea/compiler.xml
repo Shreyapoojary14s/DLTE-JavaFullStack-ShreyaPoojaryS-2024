@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Task879" />
         <module name="Task879-Soap" />
+        <module name="Soap" />
+        <module name="Task879" />
       </profile>
     </annotationProcessing>
   </component>
