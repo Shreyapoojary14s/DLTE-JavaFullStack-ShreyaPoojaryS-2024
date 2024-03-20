@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf183277-710a-4716-9c03-ed3234ea39b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/Task923.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/libraries/Maven__app_mybank_DAO_MyBankTransactionHistory_3_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/Task879.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/Task879.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/Task879-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/classes/org/example/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/classes/web/GroupOfTransactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/classes/web/SoapEndpoints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/classes/web/TransactionsSoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/surefire-reports/TEST-org.example.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/surefire-reports/org.example.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/target/test-classes/org/example/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/src/main/java/block/service/JNDI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/src/main/java/block/service/JNDI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/Task_946.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/Task_946/WEB-INF/classes/block/service/JNDI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/Task_946/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/Task_946/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/classes/block/service/JNDI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task_946/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="bf183277-710a-4716-9c03-ed3234ea39b4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

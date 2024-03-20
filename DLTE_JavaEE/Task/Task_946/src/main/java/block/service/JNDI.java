@@ -42,12 +42,12 @@ class UpdateServlet extends HttpServlet {
                 preparedStatement.setString(1,password);
                 preparedStatement.setString(2,username);
                 int updatesRows=preparedStatement.executeUpdate();
-                
+
                 // Check if the update was successful
                 if (updatesRows==1)
-                    resp.getWriter().println("Account updated");
+                    resp.getWriter().println("Successfully updated");
                 else
-                    resp.getWriter().println("Failed to update");
+                    resp.getWriter().println("Update Failed");
             }
         }catch (NamingException | SQLException e){
             e.printStackTrace();
