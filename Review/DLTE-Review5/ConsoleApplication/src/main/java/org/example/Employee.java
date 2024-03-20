@@ -3,18 +3,34 @@ package org.example;
 import org.example.Details.EmployeeAddress;
 import org.example.Details.EmployeeBasicDetails;
 
-public class EntityEmployee {
+public class Employee {
     EmployeeBasicDetails employeebasicDetails;
     EmployeeAddress employeePermanentAddress;
     EmployeeAddress employeeTemporaryAddress;
 
     @Override
     public String toString() {
-        return "EntityEmployee{" +
+        return "Employee{" +
                 "employeebasicDetails=" + employeebasicDetails +
                 ", employeePermanentAddress=" + employeePermanentAddress +
                 ", employeeTemporaryAddress=" + employeeTemporaryAddress +
                 '}';
+    }
+    public String displayEmployeeDetails() {
+        return "Employee ID: " + employeebasicDetails.getEmployeeId() +
+                "\nName: " + employeebasicDetails.getEmployeeName() +
+                "\nEmail: " + employeebasicDetails.getEmailId() +
+                "\nPhone Number: " + employeebasicDetails.getPhoneNumber() +
+                "\nPermanent Address: " + employeePermanentAddress.getAddress() +
+                "\nPermanent House Number: " + employeePermanentAddress.getHouseNumber() +
+                "\nPermanent City: " + employeePermanentAddress.getCity() +
+                "\nPermanent State: " + employeePermanentAddress.getState() +
+                "\nPermanent Pin Code: " + employeePermanentAddress.getPinCode() +
+                "\nTemporary Address: " + employeeTemporaryAddress.getAddress() +
+                "\nTemporary House Number: " + employeeTemporaryAddress.getHouseNumber() +
+                "\nTemporary City: " + employeeTemporaryAddress.getCity() +
+                "\nTemporary State: " + employeeTemporaryAddress.getState() +
+                "\nTemporary Pin Code: " + employeeTemporaryAddress.getPinCode();
     }
 
     public EmployeeBasicDetails getEmployeebasicDetails() {
@@ -41,9 +57,10 @@ public class EntityEmployee {
         this.employeeTemporaryAddress = employeeTemporaryAddress;
     }
 
-    public EntityEmployee(EmployeeBasicDetails employeebasicDetails, EmployeeAddress employeePermanentAddress, EmployeeAddress employeeTemporaryAddress) {
+    public Employee(EmployeeBasicDetails employeebasicDetails, EmployeeAddress employeePermanentAddress, EmployeeAddress employeeTemporaryAddress) {
         this.employeebasicDetails = employeebasicDetails;
         this.employeePermanentAddress = employeePermanentAddress;
         this.employeeTemporaryAddress = employeeTemporaryAddress;
     }
 }
+

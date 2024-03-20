@@ -2,22 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf183277-710a-4716-9c03-ed3234ea39b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/GroupOfTransactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/GroupOfTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/GroupOfTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/TransactionsSoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/TransactionsSoapService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client/src/main/java/web/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/GroupOfTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/GroupOfTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/SoapEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Soap/src/main/java/web/SoapEndpoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/test/java/servlets/testing/EndpointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/Tech-Review_Console.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/src/main/java/review/console/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/src/main/java/review/console/ConsoleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/src/test/java/review/console/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/Tech-Review_Console-2.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/classes/review/console/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/classes/review/console/ConsoleApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/surefire-reports/TEST-review.console.AppTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/surefire-reports/review.console.AppTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Tech-Review_Console/target/test-classes/review/console/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/Task848.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/Task848.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/CreateAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/FindAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/FindAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/FindAllByDateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/FindAllByDateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/FindAllByUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/src/main/java/dao/servlets/FindAllByUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/target/classes/dao/servlets/CreateAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/target/classes/dao/servlets/FindAll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/target/classes/dao/servlets/FindAllByDateUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task869/Task869_Rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +86,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/Task923_soap_dao/Client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,6 +127,8 @@
       <updated>1710783831372</updated>
       <workItem from="1710783834344" duration="2059000" />
       <workItem from="1710820516714" duration="11493000" />
+      <workItem from="1710904733326" duration="3988000" />
+      <workItem from="1710931886514" duration="1192000" />
     </task>
     <servers />
   </component>
@@ -152,5 +175,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1710848710410" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBaseRepositoryImplementation.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

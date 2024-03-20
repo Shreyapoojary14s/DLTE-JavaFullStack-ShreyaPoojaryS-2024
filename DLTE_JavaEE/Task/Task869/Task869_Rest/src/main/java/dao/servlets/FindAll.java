@@ -16,7 +16,7 @@ import java.util.List;
 //mapping servlets with url
 @WebServlet("/findall/*")
 public class FindAll extends HttpServlet {
-    private TransactionService transactionService;
+    public TransactionService transactionService;
 
     @Override
     public void init() throws ServletException {
@@ -24,7 +24,7 @@ public class FindAll extends HttpServlet {
         transactionService=new TransactionService(storageTarget);
     }
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //json format
         resp.setContentType("application/json");
         try {
