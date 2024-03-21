@@ -49,6 +49,12 @@ import static org.mockito.Mockito.when;
             transactions.add(new Transaction("shreya", "deposit", 502340.0, new Date("08/05/2024")));
             transactions.add(new Transaction("anusha", "withdrawal", 202340.0, new Date("04/01/2024")));
             transactions.add(new Transaction("siri", "transfer", 202340.0, new Date("08/04/2024")));
+            transactions.add(new Transaction("anusha", "withdrawal", 5240.0, new Date("04/01/2024")));
+            transactions.add(new Transaction("siri", "transfer", 85340.0, new Date("08/04/2024")));
+            transactions.add(new Transaction("anusha", "withdrawal", 202340.0, new Date("04/01/2024")));
+            transactions.add(new Transaction("siri", "transfer", 2520.0, new Date("25/04/2024")));
+            transactions.add(new Transaction("anusha", "withdrawal", 5240.0, new Date("10/01/2024")));
+            transactions.add(new Transaction("siri", "transfer", 85850.0, new Date("09/04/2024")));
 
         }
 //find all
