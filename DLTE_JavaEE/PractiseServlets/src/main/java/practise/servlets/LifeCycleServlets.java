@@ -18,11 +18,7 @@ public class LifeCycleServlets extends HttpServlet{
             throws ServletException, IOException {
         response.setContentType("text/html");
 
-        PrintWriter out = response.getWriter();
-        out.println("<html><head><title>Hello Servlet</title></head>");
-        out.println("<body>");
-        out.println("<h1>Hello, World!</h1>");
-        out.println("</body></html>");
+
     }
 
     // Cleanup method
