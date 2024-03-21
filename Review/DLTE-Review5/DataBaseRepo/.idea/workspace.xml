@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf183277-710a-4716-9c03-ed3234ea39b4" name="Default Changelist" comment="" />
+    <list default="true" id="bf183277-710a-4716-9c03-ed3234ea39b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task1041/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task1041/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task1041/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task1041/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task1041/Task1041.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DLTE_JavaEE/Task/Task923/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
