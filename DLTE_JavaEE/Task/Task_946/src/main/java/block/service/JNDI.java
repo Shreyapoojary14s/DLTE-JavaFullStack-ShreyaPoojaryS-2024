@@ -20,7 +20,7 @@ import java.sql.SQLException;
 class UpdateServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
+       try {
             Context context= new InitialContext();
             Connection connection=null;
             PreparedStatement preparedStatement;
@@ -49,7 +49,7 @@ class UpdateServlet extends HttpServlet {
                 else
                     resp.getWriter().println("Update Failed");
             }
-        }catch (NamingException | SQLException e){
+       }catch (NamingException | SQLException e){
             e.printStackTrace();
         }
     }

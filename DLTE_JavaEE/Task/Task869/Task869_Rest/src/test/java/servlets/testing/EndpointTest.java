@@ -54,7 +54,6 @@ import static org.mockito.Mockito.when;
 //find all
         @Test
         public void testFindAll() throws IOException, ServletException {
-            // Arrange
             FindAll findAllServlet = new FindAll();
             findAllServlet.transactionService=service;
             System.out.println(transactions.toString());
@@ -81,11 +80,11 @@ import static org.mockito.Mockito.when;
             when(service.callViewTransaction(anyString())).thenReturn(transactions);
 
             findAllByUserService.doGet(request, response);
-
+            //json format
             verify(response).setContentType("application/json");
             verify(service).callViewTransaction(anyString());
             String expected = "[{\"userName\":\"shreya\",\"transactionType\":\"deposit\",\"transactionAmount\":5222299.0,\"transactionDate\":\"Jan 08, 2024 12:00:00 AM\"}]";
-            assertEquals("Response content should match", expected, stringWriter.toString().trim());
+            assertEquals(" content should match", expected, stringWriter.toString().trim());
         }
 
 //date and username
@@ -102,6 +101,6 @@ import static org.mockito.Mockito.when;
             verify(response).setContentType("application/json");
             verify(service).callFindByDate(anyString(),anyString(),anyString());
             String expected="[{\"userName\":\"shreya\",\"transactionType\":\"deposit\",\"transactionAmount\":990340.0,\"transactionDate\":\"Jan 08, 2024 12:00:00 AM\"},{\"userName\":\"anusha\",\"transactionType\":\"withdrawal\",\"transactionAmount\":999940.0,\"transactionDate\":\"Feb 14, 2024 12:00:00 AM\"},{\"userName\":\"siri\",\"transactionType\":\"transfer\",\"transactionAmount\":202340.0,\"transactionDate\":\"Mar 29, 2024 12:00:00 AM\"}]";
-            assertEquals("Response content should match", expected, stringWriter.toString().trim());
+            assertEquals("content should match", expected, stringWriter.toString().trim());
         }
     }

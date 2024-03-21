@@ -37,6 +37,7 @@ import java.util.stream.Stream;
             transactions.add(new Transaction("shreya", "deposit", 852340.0, new Date("01/13/2024")));
             transactions.add(new Transaction("anusha", "withdrawal", 8540.0, new Date("02/02/2024")));
             transactions.add(new Transaction("sweedal", "transfer", 7418520.0, new Date("03/03/2024")));
+            transactions.add(new Transaction("Asha", "withdraw", 100120.0, new Date("03/03/2024")));
         }
 //find all
         @Test
