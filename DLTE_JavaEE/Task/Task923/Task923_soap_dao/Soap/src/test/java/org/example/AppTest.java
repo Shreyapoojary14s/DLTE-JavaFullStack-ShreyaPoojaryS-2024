@@ -34,9 +34,9 @@ import java.util.stream.Stream;
             MockitoAnnotations.initMocks(this);
             transactionsSoap=new TransactionsSoap();
             transactionsSoap.service=transactionService;
-            transactions.add(new Transaction("elroy", "deposit", 502340.0, new Date("01/13/2024")));
-            transactions.add(new Transaction("ajay", "withdrawal", 202340.0, new Date("02/02/2024")));
-            transactions.add(new Transaction("aman", "transfer", 202340.0, new Date("03/03/2024")));
+            transactions.add(new Transaction("shreya", "deposit", 852340.0, new Date("01/13/2024")));
+            transactions.add(new Transaction("anusha", "withdrawal", 8540.0, new Date("02/02/2024")));
+            transactions.add(new Transaction("sweedal", "transfer", 7418520.0, new Date("03/03/2024")));
         }
 
         @Test
@@ -49,20 +49,20 @@ import java.util.stream.Stream;
 
         @Test
         public void testFindAllByUsername(){
-            Transaction transaction1=new Transaction("elroy", "deposit", 502340.0, new Date("01/13/2024"));
-            Transaction transaction2=new Transaction("ajay", "withdrawal", 202340.0, new Date("02/02/2024"));
-            Transaction transaction3=new Transaction("aman", "transfer", 202340.0, new Date("03/03/2024"));
+            Transaction transaction1=new Transaction("shreya", "deposit", 852340.0, new Date("01/13/2024"));
+            Transaction transaction2=new Transaction("anusha", "withdrawal", 8540.0, new Date("02/02/2024"));
+            Transaction transaction3=new Transaction("sweedal", "transfer", 7418520.0, new Date("03/03/2024"));
 
             List<Transaction> transactionList1= Stream.of(transaction1,transaction2).collect(Collectors.toList());
             List<Transaction> transactionList2= Stream.of(transaction1).collect(Collectors.toList());
-            when(transactionService.callViewTransaction("elroy")).thenReturn(transactionList2);
-            GroupOfTransactions groupOfTransactions=transactionsSoap.readAllByUser("elroy");
+            when(transactionService.callViewTransaction("shreya")).thenReturn(transactionList2);
+            GroupOfTransactions groupOfTransactions=transactionsSoap.readAllByUser("shreya");
             assertNotNull(groupOfTransactions);
-            assertEquals("elroy",groupOfTransactions.getTransactions().get(0).getUserName());
+            assertEquals("shreya",groupOfTransactions.getTransactions().get(0).getUserName());
         }
         @Test
         public void testAddTransaction(){
-            Transaction transaction = new Transaction("testUser", "testTransaction", 100.0, new Date("02/03/2024"));
+            Transaction transaction = new Transaction("testUser", "testTransaction", 200.0, new Date("02/03/2024"));
             doNothing().when(transactionService).callSaveTransaction(transaction);
             transactionsSoap.createTransaction(transaction);
             verify(transactionService, times(1)).callSaveTransaction(transaction);
