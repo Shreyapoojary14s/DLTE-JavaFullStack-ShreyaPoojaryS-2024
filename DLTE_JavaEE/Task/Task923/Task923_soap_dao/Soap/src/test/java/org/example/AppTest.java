@@ -38,7 +38,7 @@ import java.util.stream.Stream;
             transactions.add(new Transaction("anusha", "withdrawal", 8540.0, new Date("02/02/2024")));
             transactions.add(new Transaction("sweedal", "transfer", 7418520.0, new Date("03/03/2024")));
         }
-
+//find all
         @Test
         public void testFindAll(){
             when(transactionService.callViewAllTransaction()).thenReturn(transactions);
@@ -46,7 +46,7 @@ import java.util.stream.Stream;
             System.out.println(transactions.toString());
             assertNotNull(transactions);
         }
-
+//by username
         @Test
         public void testFindAllByUsername(){
             Transaction transaction1=new Transaction("shreya", "deposit", 852340.0, new Date("01/13/2024"));
@@ -60,6 +60,7 @@ import java.util.stream.Stream;
             assertNotNull(groupOfTransactions);
             assertEquals("shreya",groupOfTransactions.getTransactions().get(0).getUserName());
         }
+        //adding transaction
         @Test
         public void testAddTransaction(){
             Transaction transaction = new Transaction("testUser", "testTransaction", 200.0, new Date("02/03/2024"));
