@@ -9,11 +9,11 @@ import java.util.List;
 //hql and native query
     @Repository
     public interface JpaTransactionRepository extends JpaRepository<ViewTransaction,String>{
-        //in between
+        //in between --RangeOfTransactionAmount
         @Query("from ViewTransaction where transactionAmount between :transactionAmount1 and :transactionAmount2")
         List<ViewTransaction> lookForAmountRange(Double transactionAmount1,Double transactionAmount2);
 
-       //username & type
+       //username & type --UserAndType
         @Query(value = "select * from View_Transaction where user_Name = :user and transaction_Type = :type", nativeQuery = true)
         List<ViewTransaction> lookForUserAndType(String user, String type);
 
