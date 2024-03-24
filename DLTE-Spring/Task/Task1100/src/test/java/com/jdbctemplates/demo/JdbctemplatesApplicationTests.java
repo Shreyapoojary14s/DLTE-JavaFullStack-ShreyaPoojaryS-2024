@@ -27,8 +27,8 @@ import static org.mockito.Mockito.when;
         private Services transactionService;
         private List<Entitys> getSampleTransactionEntities() {
             List<Entitys> testList=new ArrayList<>();
-            Entitys transaction1 = new Entitys(123L, new Date("01/02/2024"), "Shreya", "Vinay", 20000.0,"Education");
-            Entitys transaction2 = new Entitys(123L, new Date("03/23/2024"),"anusha", "Gopal" + "", 40000.0,"Hostel");
+            Entitys transaction1 = new Entitys(1243L, new Date("01/02/2024"), "Shreya", "Vinay", 20000.0,"Education");
+            Entitys transaction2 = new Entitys(1273L, new Date("03/23/2024"),"anusha", "Gopal" + "", 40000.0,"Hostel");
             testList.add(transaction1);
             testList.add(transaction2);
             return testList;
@@ -36,8 +36,8 @@ import static org.mockito.Mockito.when;
         //adding test
         @Test
         void testAddTransaction() {
-            Entitys transaction1 = new  Entitys(123L, new Date("01/02/2024"), "Shreya", "vinay", 20000.0,"Education");
-            Entitys transaction2 = new Entitys(123L, new Date("03/23/2024"),"anusha", "Gopal", 40000.0,"Hostel");
+            Entitys transaction1 = new  Entitys(1243L, new Date("01/02/2024"), "Shreya", "vinay", 20000.0,"Education");
+            Entitys transaction2 = new Entitys(1273L, new Date("03/23/2024"),"anusha", "Gopal", 40000.0,"Hostel");
 
             when(jdbcTemplate.update(anyString(), anyLong(), anyDouble(), anyString(), anyString(), anyString(), any(Date.class))).thenReturn(1);
             Entitys result = transactionService.newTransaction(transaction1);
@@ -46,8 +46,8 @@ import static org.mockito.Mockito.when;
         //by sender
         @Test
         void testFilterSender() {
-           Entitys transaction1 = new  Entitys(123L, new Date("01/02/2024"), "Shreya", "vinay", 20000.0,"Education");
-            Entitys transaction2 = new  Entitys(123L, new Date("03/23/2024"),"anusha", "Gopal", 40000.0,"hostel");
+           Entitys transaction1 = new  Entitys(1243L, new Date("01/02/2024"), "Shreya", "vinay", 20000.0,"Education");
+            Entitys transaction2 = new  Entitys(1273L, new Date("03/23/2024"),"anusha", "Gopal", 40000.0,"hostel");
             List< Entitys> expectedList =  Stream.of(transaction1, transaction2).collect(Collectors.toList());
             when(jdbcTemplate.query(anyString(), any(Object[].class), any(Services.TransactionMapper.class)))
                     .thenReturn(getSampleTransactionEntities());
