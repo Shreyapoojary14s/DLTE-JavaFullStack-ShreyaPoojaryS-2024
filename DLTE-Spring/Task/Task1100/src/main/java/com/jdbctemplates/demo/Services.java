@@ -11,7 +11,7 @@ import java.util.List;
     @Service
     public class Services {
         @Autowired
-        private JdbcTemplate jdbcTemplate;
+        private static JdbcTemplate jdbcTemplate;
 
         public Entitys newTransaction(Entitys transaction) {
             jdbcTemplate.update("INSERT INTO transaction_entity (transaction_id, amount, received_by, remarks, sent_to, transaction_date ) VALUES (?, ?, ?, ?, ?, ?)",
@@ -25,25 +25,25 @@ import java.util.List;
             return transaction;
         }
         //filter by sender
-        public List<Entitys> findBySender(String sender) {
+        public static List<Entitys> findBySender(String sender) {
             return jdbcTemplate.query("SELECT * FROM transaction_entity WHERE sent_to = ?",
                     new Object[]{sender},
                     new TransactionMapper());
         }
     //filter by receiver
-        public List<Entitys> findByReceiver(String receiver) {
+        public static List<Entitys> findByReceiver(String receiver) {
             return jdbcTemplate.query("SELECT * FROM transaction_entity WHERE received_by = ?",
                     new Object[]{receiver},
                     new TransactionMapper());
         }
     //filter by amount
-        public List<Entitys> findByAmount(Double amount) {
+        public static List<Entitys> findByAmount(Double amount) {
             return jdbcTemplate.query("SELECT * FROM transaction_entity WHERE amount = ?",
                     new Object[]{amount},
                     new TransactionMapper());
         }
 
-        class TransactionMapper implements RowMapper<Entitys>{
+        static class TransactionMapper implements RowMapper<Entitys>{
 //add manually
             @Override
             public Entitys mapRow(ResultSet rs, int rowNum) throws SQLException {

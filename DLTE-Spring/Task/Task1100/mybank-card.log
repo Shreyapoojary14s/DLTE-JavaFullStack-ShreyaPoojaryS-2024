@@ -57,4 +57,177 @@
 [0;39m[31m2024-03-24 13:53:16,533[0;39m [32m[INFO][0;39m org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator restartedMain [31mHHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 [0;39m[31m2024-03-24 13:53:16,545[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean restartedMain [31mInitialized JPA EntityManagerFactory for persistence unit 'default'
 [0;39m[31m2024-03-24 13:53:16,610[0;39m [32m[WARN][0;39m org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration restartedMain [31mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[0;39m[31m2024-03-24 13:53:17,002[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [31mLiveReload server is running on port 35729
+[0;39m[31m2024-03-24 13:53:17,042[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [31mTomcat started on port(s): 8881 (http) with context path ''
+[0;39m[31m2024-03-24 13:53:17,053[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mStarted JdbctemplatesApplication in 4.061 seconds (JVM running for 5.361)
+[0;39m[31m2024-03-24 15:52:55,522[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [31mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h34m9s280ms67µs800ns).
+[0;39m[31m2024-03-24 16:37:09,558[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [31mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m43s779ms223µs100ns).
+[0;39m[31m2024-03-24 17:10:10,072[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [31mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m30s85ms758µs800ns).
+[0;39m[31m2024-03-24 17:37:20,649[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [31mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m40s311ms20µs400ns).
+[0;39m[31m2024-03-24 17:59:28,737[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [31mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s755ms425µs900ns).
+[0;39m[31m2024-03-24 18:33:50,962[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [31mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m21s781ms83µs400ns).
+[0;39m[31m2024-03-24 18:54:02,559[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener File Watcher [31mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[0;39m[31m2024-03-24 18:54:02,781[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService Thread-16 [31mStopping service [Tomcat]
+[0;39m[31m2024-03-24 18:54:02,802[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Thread-16 [31mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 18:54:02,815[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-16 [31mHikariPool-1 - Shutdown initiated...
+[0;39m[31m2024-03-24 18:54:02,826[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-16 [31mHikariPool-1 - Shutdown completed.
+[0;39m[31m2024-03-24 18:54:03,032[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mStarting JdbctemplatesApplication using Java 1.8.0_292 on WPF45M1TD with PID 24560 (C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100\target\classes started by xxpoojbs in C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100)
+[0;39m[31m2024-03-24 18:54:03,033[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-03-24 18:54:03,248[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 18:54:03,249[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 18:54:03,251[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mFinished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-03-24 18:54:03,255[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 18:54:03,255[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 18:54:03,257[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mFinished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+[0;39m[31m2024-03-24 18:54:03,399[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [31mTomcat initialized with port(s): 8881 (http)
+[0;39m[31m2024-03-24 18:54:03,400[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [31mStarting service [Tomcat]
+[0;39m[31m2024-03-24 18:54:03,400[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [31mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-03-24 18:54:03,433[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [31mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-03-24 18:54:03,433[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [31mRoot WebApplicationContext: initialization completed in 394 ms
+[0;39m[31m2024-03-24 18:54:03,474[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-2 - Starting...
+[0;39m[31m2024-03-24 18:54:03,474[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [31mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-03-24 18:54:03,498[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [31mHikariPool-2 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-03-24 18:54:03,501[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-2 - Start completed.
+[0;39m[31m2024-03-24 18:54:03,504[0;39m [32m[INFO][0;39m org.hibernate.jpa.internal.util.LogHelper restartedMain [31mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[31m2024-03-24 18:54:03,509[0;39m [32m[INFO][0;39m org.hibernate.dialect.Dialect restartedMain [31mHHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[0;39m[31m2024-03-24 18:54:03,517[0;39m [32m[INFO][0;39m org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator restartedMain [31mHHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[0;39m[31m2024-03-24 18:54:03,517[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean restartedMain [31mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 18:54:03,541[0;39m [32m[WARN][0;39m org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration restartedMain [31mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[0;39m[31m2024-03-24 18:54:03,698[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [31mLiveReload server is running on port 35729
+[0;39m[31m2024-03-24 18:54:03,713[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [31mTomcat started on port(s): 8881 (http) with context path ''
+[0;39m[31m2024-03-24 18:54:03,719[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mStarted JdbctemplatesApplication in 0.732 seconds (JVM running for 18052.026)
+[0;39m[31m2024-03-24 18:54:03,723[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener restartedMain [31mCondition evaluation unchanged
+[0;39m[31m2024-03-24 19:22:41,614[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener File Watcher [31mRestarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+[0;39m[31m2024-03-24 19:22:41,772[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService Thread-22 [31mStopping service [Tomcat]
+[0;39m[31m2024-03-24 19:22:41,780[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Thread-22 [31mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 19:22:41,781[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-22 [31mHikariPool-2 - Shutdown initiated...
+[0;39m[31m2024-03-24 19:22:41,796[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-22 [31mHikariPool-2 - Shutdown completed.
+[0;39m[31m2024-03-24 19:22:41,951[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mStarting JdbctemplatesApplication using Java 1.8.0_292 on WPF45M1TD with PID 24560 (C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100\target\classes started by xxpoojbs in C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100)
+[0;39m[31m2024-03-24 19:22:41,952[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-03-24 19:22:42,193[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 19:22:42,193[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 19:22:42,195[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mFinished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-03-24 19:22:42,202[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 19:22:42,202[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 19:22:42,205[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mFinished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+[0;39m[31m2024-03-24 19:22:42,340[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [31mTomcat initialized with port(s): 8881 (http)
+[0;39m[31m2024-03-24 19:22:42,340[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [31mStarting service [Tomcat]
+[0;39m[31m2024-03-24 19:22:42,340[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [31mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-03-24 19:22:42,357[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [31mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-03-24 19:22:42,357[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [31mRoot WebApplicationContext: initialization completed in 400 ms
+[0;39m[31m2024-03-24 19:22:42,390[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-3 - Starting...
+[0;39m[31m2024-03-24 19:22:42,390[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [31mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-03-24 19:22:42,411[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [31mHikariPool-3 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-03-24 19:22:42,412[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-3 - Start completed.
+[0;39m[31m2024-03-24 19:22:42,415[0;39m [32m[INFO][0;39m org.hibernate.jpa.internal.util.LogHelper restartedMain [31mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[31m2024-03-24 19:22:42,418[0;39m [32m[INFO][0;39m org.hibernate.dialect.Dialect restartedMain [31mHHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[0;39m[31m2024-03-24 19:22:42,425[0;39m [32m[INFO][0;39m org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator restartedMain [31mHHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[0;39m[31m2024-03-24 19:22:42,425[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean restartedMain [31mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 19:22:42,429[0;39m [32m[WARN][0;39m org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext restartedMain [31mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllers' defined in file [C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100\target\classes\com\jdbctemplates\demo\Controllers.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.jdbctemplates.demo.Controllers] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6e5196]
+[0;39m[31m2024-03-24 19:22:42,429[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean restartedMain [31mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 19:22:42,430[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-3 - Shutdown initiated...
+[0;39m[31m2024-03-24 19:22:42,431[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-3 - Shutdown completed.
+[0;39m[31m2024-03-24 19:22:42,431[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [31mStopping service [Tomcat]
+[0;39m[31m2024-03-24 19:22:42,437[0;39m [32m[INFO][0;39m org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener restartedMain [31m
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[0;39m[31m2024-03-24 19:22:42,483[0;39m [32m[ERROR][0;39m org.springframework.boot.SpringApplication restartedMain [31mApplication run failed
+[0;39morg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllers' defined in file [C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100\target\classes\com\jdbctemplates\demo\Controllers.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.jdbctemplates.demo.Controllers] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6e5196]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.10.jar:2.7.10]
+	at com.jdbctemplates.demo.JdbctemplatesApplication.main(JdbctemplatesApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.10.jar:2.7.10]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.jdbctemplates.demo.Controllers] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6e5196]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.26.jar:5.3.26]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.26.jar:5.3.26]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:407) ~[spring-orm-5.3.26.jar:5.3.26]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:388) ~[spring-orm-5.3.26.jar:5.3.26]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:335) ~[spring-orm-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.26.jar:5.3.26]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/jdbctemplates/demo/Services;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_292]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_292]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_292]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.26.jar:5.3.26]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.jdbctemplates.demo.Services
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_292]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[na:1.8.0_292]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352) ~[na:1.8.0_292]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[na:1.8.0_292]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_292]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_292]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.10.jar:2.7.10]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[na:1.8.0_292]
+	... 30 common frames omitted
+[31m2024-03-24 19:23:28,694[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mStarting JdbctemplatesApplication using Java 1.8.0_292 on WPF45M1TD with PID 24560 (C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100\target\classes started by xxpoojbs in C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100)
+[0;39m[31m2024-03-24 19:23:28,694[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-03-24 19:23:28,859[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 19:23:28,860[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 19:23:28,863[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mFinished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-03-24 19:23:28,868[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 19:23:28,869[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 19:23:28,871[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [31mFinished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+[0;39m[31m2024-03-24 19:23:29,008[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [31mTomcat initialized with port(s): 8881 (http)
+[0;39m[31m2024-03-24 19:23:29,009[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [31mStarting service [Tomcat]
+[0;39m[31m2024-03-24 19:23:29,009[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [31mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-03-24 19:23:29,036[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] restartedMain [31mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-03-24 19:23:29,036[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [31mRoot WebApplicationContext: initialization completed in 339 ms
+[0;39m[31m2024-03-24 19:23:29,088[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-4 - Starting...
+[0;39m[31m2024-03-24 19:23:29,088[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [31mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-03-24 19:23:29,125[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [31mHikariPool-4 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-03-24 19:23:29,128[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [31mHikariPool-4 - Start completed.
+[0;39m[31m2024-03-24 19:23:29,149[0;39m [32m[INFO][0;39m org.hibernate.jpa.internal.util.LogHelper restartedMain [31mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[31m2024-03-24 19:23:29,159[0;39m [32m[INFO][0;39m org.hibernate.dialect.Dialect restartedMain [31mHHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[0;39m[31m2024-03-24 19:23:29,173[0;39m [32m[INFO][0;39m org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator restartedMain [31mHHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[0;39m[31m2024-03-24 19:23:29,173[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean restartedMain [31mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 19:23:29,184[0;39m [32m[INFO][0;39m org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor restartedMain [31mAutowired annotation is not supported on static fields: private static org.springframework.jdbc.core.JdbcTemplate com.jdbctemplates.demo.Services.jdbcTemplate
+[0;39m[31m2024-03-24 19:23:29,205[0;39m [32m[WARN][0;39m org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration restartedMain [31mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[0;39m[31m2024-03-24 19:23:29,337[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [31mLiveReload server is running on port 35729
+[0;39m[31m2024-03-24 19:23:29,352[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [31mTomcat started on port(s): 8881 (http) with context path ''
+[0;39m[31m2024-03-24 19:23:29,358[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplication restartedMain [31mStarted JdbctemplatesApplication in 0.701 seconds (JVM running for 19817.665)
+[0;39m[31m2024-03-24 19:23:29,360[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener restartedMain [31mCondition evaluation unchanged
+[0;39m[31m2024-03-24 19:29:48,415[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplicationTests main [31mStarting JdbctemplatesApplicationTests using Java 1.8.0_292 on WPF45M1TD with PID 14668 (started by xxpoojbs in C:\DLTE-JavaFullStack-ShreyaPoojarys2024\DLTE-Spring\Task\Task1100)
+[0;39m[31m2024-03-24 19:29:48,416[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplicationTests main [31mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-03-24 19:29:48,934[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 19:29:48,935[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [31mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 19:29:48,946[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [31mFinished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-03-24 19:29:48,955[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [31mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39m[31m2024-03-24 19:29:48,957[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [31mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[31m2024-03-24 19:29:48,964[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [31mFinished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+[0;39m[31m2024-03-24 19:29:49,580[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource main [31mHikariPool-1 - Starting...
+[0;39m[31m2024-03-24 19:29:49,584[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource main [31mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-03-24 19:29:49,899[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase main [31mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-03-24 19:29:49,903[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource main [31mHikariPool-1 - Start completed.
+[0;39m[31m2024-03-24 19:29:49,955[0;39m [32m[INFO][0;39m org.hibernate.jpa.internal.util.LogHelper main [31mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[31m2024-03-24 19:29:50,010[0;39m [32m[INFO][0;39m org.hibernate.Version main [31mHHH000412: Hibernate ORM core version 5.6.15.Final
+[0;39m[31m2024-03-24 19:29:50,215[0;39m [32m[INFO][0;39m org.hibernate.annotations.common.Version main [31mHCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[0;39m[31m2024-03-24 19:29:50,358[0;39m [32m[INFO][0;39m org.hibernate.dialect.Dialect main [31mHHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[0;39m[31m2024-03-24 19:29:50,610[0;39m [32m[INFO][0;39m org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator main [31mHHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[0;39m[31m2024-03-24 19:29:50,620[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean main [31mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 19:29:50,632[0;39m [32m[INFO][0;39m org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor main [31mAutowired annotation is not supported on static fields: private static org.springframework.jdbc.core.JdbcTemplate com.jdbctemplates.demo.Services.jdbcTemplate
+[0;39m[31m2024-03-24 19:29:50,844[0;39m [32m[WARN][0;39m org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration main [31mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[0;39m[31m2024-03-24 19:29:51,558[0;39m [32m[INFO][0;39m com.jdbctemplates.demo.JdbctemplatesApplicationTests main [31mStarted JdbctemplatesApplicationTests in 3.474 seconds (JVM running for 4.648)
+[0;39m[31m2024-03-24 19:29:52,352[0;39m [32m[INFO][0;39m org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean SpringApplicationShutdownHook [31mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[31m2024-03-24 19:29:52,356[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook [31mHikariPool-1 - Shutdown initiated...
+[0;39m[31m2024-03-24 19:29:52,364[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook [31mHikariPool-1 - Shutdown completed.
 [0;39m
