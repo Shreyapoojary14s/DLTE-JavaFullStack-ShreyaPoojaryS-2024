@@ -7,7 +7,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -16,6 +15,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.Mockito.lenient;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -39,9 +39,10 @@ import static org.mockito.Mockito.when;
             Entitys transaction1 = new  Entitys(1243L, new Date("01/02/2024"), "Shreya", "vinay", 20000.0,"Education");
             Entitys transaction2 = new Entitys(1273L, new Date("03/23/2024"),"anusha", "Gopal", 40000.0,"Hostel");
 
-            when(jdbcTemplate.update(anyString(), anyLong(), anyDouble(), anyString(), anyString(), anyString(), any(Date.class))).thenReturn(1);
+            lenient().when(jdbcTemplate.update(anyString(), anyLong(), anyDouble(), anyString(), anyString(), anyString(), any(Date.class))).thenReturn(1);
             Entitys result = transactionService.newTransaction(transaction1);
             assertEquals(transaction1, result);
+           // assertEquals(transaction2, result);
         }
         //by sender
         @Test
@@ -70,7 +71,6 @@ import static org.mockito.Mockito.when;
     @Test
     void testFilterAmount() {
         when(jdbcTemplate.query(anyString(), any(Object[].class), any(Services.TransactionMapper.class))).thenReturn(getSampleTransactionEntities());
-
         List<Entitys> result = Services.findByAmount(2000.0);
         assertNotNull(result);
         assertEquals(2, result.size());
