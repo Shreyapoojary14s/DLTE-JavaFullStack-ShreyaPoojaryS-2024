@@ -134,9 +134,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
                     .andExpect(jsonPath("$[0].transactionId").value(768757847L))
                     .andExpect(jsonPath("$[0].transactionDate").value("2024-03-21T18:30:00.000+00:00"))
                     .andExpect(jsonPath("$[0].transactionAmount").value(7000.0))
-                    .andExpect(jsonPath("$[0].transactionTo").value("John"))
-                    .andExpect(jsonPath("$[0].remarks").value("Bills"))
-                    .andExpect(jsonPath("$[0].transactionBy").value("Peter"));
+                    .andExpect(jsonPath("$[0].transactionTo").value("Shreya"))
+                    .andExpect(jsonPath("$[0].remarks").value("Education"))
+                    .andExpect(jsonPath("$[0].transactionBy").value("Gopal"));
 
         }
 
