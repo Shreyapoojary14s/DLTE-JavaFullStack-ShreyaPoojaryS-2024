@@ -14,7 +14,7 @@ public class MyBankOfficialService implements UserDetailsService {
 private JdbcTemplate jdbcTemplate;
 
 
-    public MyBankOfficials signingUp(MyBankOfficials myBankOfficials){
+    public MyBankOfficials bySigningUp(MyBankOfficials myBankOfficials){
         int ack = jdbcTemplate.update("insert into my_bank_officials values(?,?,?,?,?)",new Object[]{
                 myBankOfficials.getUsername(),
                 myBankOfficials.getPassword(),
@@ -31,7 +31,7 @@ private JdbcTemplate jdbcTemplate;
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails byUsername(String username) throws UsernameNotFoundException {
         MyBankOfficials officials = findByUsername(username);
         if(officials==null)
             throw new UsernameNotFoundException(username);
