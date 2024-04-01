@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class MyBankOfficials implements UserDetails {
+public class MyBankOfficialsEntity implements UserDetails {
     private String name;
     private String username;
     private String password;
