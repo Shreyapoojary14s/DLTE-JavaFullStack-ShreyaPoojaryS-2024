@@ -14,6 +14,7 @@ public class MyBankOfficials implements UserDetails {
     private String email;
     private long contact;
     private long aadhaar;
+    //role >>authority
     private String role;
 
     public String getName() {
