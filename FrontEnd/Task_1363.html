@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+<style>
+    body {
+        background-color: blueviolet;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    form {
+        background-color: rgba(75, 157, 220, 0.8);
+        padding: 20px;
+        max-width: 500px;
+        margin: 100px auto;
+        border-radius: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"],
+    select,
+    textarea,
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+<!-- action >>where should it throw -->
+<form action="#" method="post">
+<!-- account number -->
+    <label for="accountNumber">Account number:</label>
+    <input type="text" id="accountNumber" name="accountNumber">
+<!-- account holder name -->
+    <label for="accountHolder">Account Holder:</label>
+    <input type="text" id="accountHolder" name="accountHolder">
+<!-- account type with radio type with savings and current type -->
+    <label>Account type:</label>
+    <label for="savings">Savings</label>
+    <input type="radio" id="savings" name="accountType" value="savings">
+    <label for="current">Current</label>
+    <input type="radio" id="current" name="accountType" value="current">
+<!-- cheque book  type  -->
+    <label for="chequeBookType">Cheque book type:</label>
+    <select id="chequeBookType" name="chequeBookType">
+        <option value="standard">Standard</option>
+        <option value="premium">Premium</option>
+        <option value="personalized">Personalized</option>
+    </select>
+<!-- date  with specified date type -->
+    <label for="dateOfApply">Date of apply:</label>
+    <input type="date" id="dateOfApply" name="dateOfApply">
+<!-- for terms and condition sample check box -->
+    <label>
+        <input type="checkbox" name="termsAndConditions">
+        Terms and Conditions
+    </label>
+<!-- address -->
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea>
+<!-- add external file image signature -->
+    <label for="signature">Signature:</label>
+    <input type="file" id="signature" name="signature">
+<!-- contact number -->
+    <label for="contactNumber">Contact number:</label>
+    <input type="tel" id="contactNumber" name="contactNumber">
+<!-- only email id -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+<!-- subbmit button -->
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
