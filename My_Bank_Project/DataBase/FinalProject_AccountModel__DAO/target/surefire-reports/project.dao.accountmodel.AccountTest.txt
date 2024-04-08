@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: project.dao.accountmodel.AccountTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.784 s <<< FAILURE! - in project.dao.accountmodel.AccountTest
+testactive  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Cannot instantiate @InjectMocks field named 'accountService'! Cause: the type 'AccountRepository' is an interface.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+Examples of correct usage of @InjectMocks:
+   @InjectMocks Service service = new Service();
+   @InjectMocks Service service;
+   //and... don't forget about some @Mocks for injection :)
+
+
