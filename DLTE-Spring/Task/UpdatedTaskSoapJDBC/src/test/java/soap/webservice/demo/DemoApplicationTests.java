@@ -39,18 +39,18 @@ List<Transactions> testBlock() {
     newTransaction.add(transaction2);
     return newTransaction;
 }
-@Test
-List<Transactions> testAddTransactionRequest(){
-    List<Transactions> transactionsList=new ArrayList<>();
-    Transactions transaction1 = new Transactions(25, new Date(String.valueOf(new Date("05/25/2024"))), "prabha", 500, "family", "chethan");
-    Transactions transaction2 = new Transactions(20, new Date(String.valueOf(new Date("12/19/2024"))), "rushil", 489, "bills", "uttam");
+    @Test
+    void testremoveTransactionBetweenDates(){
+    Date startDate = new Date("05/15/2024");
+    Date endDate = new Date("05/19/2024");
 
-//  // List<Transactions> transactionsList= Stream.of(transaction1,transaction2).collect(Collectors.toList());
-    when(jdbcTemplate.update(String.valueOf(anyInt()), any(Date.class), anyString(), anyDouble(), anyString(), anyString())).thenReturn(1);
-    Transactions result = transactionService.newTransaction(transaction1);
-    assertEquals(transaction1, result);
-    return transactionsList;
+    when(jdbcTemplate.update(any(String.class),any(),any())).thenReturn(1);
+    String result = transactionService.removeTransactionsBetweenDates(startDate, endDate);
+    assertEquals("removed", result);
+    //assertNotEquals("removed",result);
+
 }
+
 
 @Test
 void testFindBySender(){
@@ -73,6 +73,16 @@ void testFindByReceiver(){
     assertEquals(transactionsList, transactionsresult);
 }
     @Test
+List<Transactions> testAddTransactionRequest(){
+    List<Transactions> transactionsList=new ArrayList<>();
+    Transactions transaction1 = new Transactions(25, new Date(String.valueOf(new Date("05/25/2024"))), "prabha", 500, "family", "chethan");
+    Transactions transaction2 = new Transactions(20, new Date(String.valueOf(new Date("12/19/2024"))), "rushil", 489, "bills", "uttam");
+    when(jdbcTemplate.update(String.valueOf(anyInt()), any(Date.class), anyString(), anyDouble(), anyString(), anyString())).thenReturn(1);
+    Transactions result = transactionService.newTransaction(transaction1);
+    assertEquals(transaction1, result);
+    return transactionsList;
+}
+    @Test
     void contextLoads() {
     }
 @Test
@@ -86,9 +96,6 @@ void testFindByReceiver(){
 }
 @Test
     void testUpdateRemarks(){
-//    Transactions transaction1 = new Transactions(25, new Date(2024, 05, 25), "sumanth", 4000.0, "family", "kavya");
-//    Transactions transaction2 = new Transactions(20, new Date(2024, 02, 15), "snehal", 489.0, "bills", "anith");
-//    List<Transactions> transactionsList= Stream.of(transaction1,transaction2).collect(Collectors.toList());
         List<Transactions> testremarks=testBlock();
       //  when(jdbcTemplate.query(any(String.class), any(Object[].class), any(TransactionService.TransactionMapper.class))).thenReturn(testremarks);
     when(jdbcTemplate.query(ArgumentMatchers.anyString(),ArgumentMatchers.any(Object[].class),ArgumentMatchers.any(TransactionService.TransactionMapper.class))).thenReturn(testremarks);
@@ -96,15 +103,5 @@ void testFindByReceiver(){
     Transactions result=transactionService.updateRemarks(testremarks.get(0));
         assertEquals(testremarks.get(1).toString(),result.toString());
 }
-@Test
-    void testremoveTransactionBetweenDates(){
-    Date startDate = new Date("05/15/2024");
-    Date endDate = new Date("05/19/2024");
 
-    when(jdbcTemplate.update(any(String.class),any(),any())).thenReturn(1);
-    String result = transactionService.removeTransactionsBetweenDates(startDate, endDate);
-    assertEquals("removed", result);
-    //assertNotEquals("removed",result);
-
-}
 }
