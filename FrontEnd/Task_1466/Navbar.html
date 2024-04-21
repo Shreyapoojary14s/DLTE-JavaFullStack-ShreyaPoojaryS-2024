@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+            background-image: url('https://th.bing.com/th/id/R.6c416ae38894bd9681d2dd7476f80bd8?rik=oFj5NaBi4bYJwQ&riu=http%3a%2f%2fwww.savingadvice.com%2fwp-content%2fuploads%2f2015%2f12%2fTwo-Bank-Accounts.jpg&ehk=VlJvwNNpFHyM2tlmHXwEQj20ERwEGS8htBWxUmbRpls%3d&risl=&pid=ImgRaw&r=0'); /* Specify the path to your background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .navbar {
+        background-color: #c2bc48;
+      }
+      .navbar-brand img {
+        width: 30px; 
+        height: auto;
+        margin-right: 10px;
+      }
+      .nav-link {
+        color: #c1c415; /* Dark Gray */
+      }
+      .nav-link:hover {
+        background-color: #b2ba44; /* Dark Purple */
+        color: #641bbe; /* White */
+      }
+      #contentFrame {
+        width: 100%;
+        height: calc(100vh - 56px); 
+        border: none;
+      }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="mybanklogo.jpg" alt="Bank Logo"> 
+            My Bank
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link text-dark" onclick="loadPage('page2.html')">New Cheque Book Request</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link text-dark" onclick="loadPage('page3.html')">Cheque Book Details</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link text-dark" onclick="loadPage('page4.html')">Recent Schemes</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link text-dark" onclick="exit()">Exit</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+ <!-- Iframe Container -->
+ <iframe id="contentFrame" src="" ></iframe>
+  
+ <!-- Bootstrap JS Bundle -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+ <script>
+   function loadPage(pageName) {
+     document.getElementById('contentFrame').src = pageName;
+   }
+
+   function exit() {
+     // Your exit logic here
+     alert("Exiting...");
+   }
+ </script>
+</body>
+</html>
