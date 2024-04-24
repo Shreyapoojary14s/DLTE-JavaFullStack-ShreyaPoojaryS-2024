@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Loan Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/R.6c416ae38894bd9681d2dd7476f80bd8?rik=oFj5NaBi4bYJwQ&riu=http%3a%2f%2fwww.savingadvice.com%2fwp-content%2fuploads%2f2015%2f12%2fTwo-Bank-Accounts.jpg&ehk=VlJvwNNpFHyM2tlmHXwEQj20ERwEGS8htBWxUmbRpls%3d&risl=&pid=ImgRaw&r=0'); /* Specify the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .custom-box {
+            background-color: rgba(141, 145, 106, 0.8); /* Adjust the RGBA values for the desired color and opacity */
+            border-radius: 15px;
+        }
+
+        .custom-box label {
+            text-emphasis-color:  rgba(141, 145, 106, 0.8);
+            color: #3113da; /* Adjust the color of labels */
+        }
+
+        .custom-box input[type="number"],
+        .custom-box input[type="text"] {
+            border: 1px solid #8398a1;
+            
+        }
+
+        .custom-box input[type="number"]:focus,
+        .custom-box input[type="text"]:focus {
+            border-color: #8398a1; /* Change border color on focus */
+            box-shadow: 0 0 0 0.2rem  rgba(141, 145, 106, 0.8); /* Add a blue shadow on focus */
+        }
+    </style>
+    <script>
+        $(document).ready(()=>{
+
+            $("#cancel").click(()=>{
+                $("#accountNumber").val("")
+                $("#accountType").val("")
+                $("#accountBalance").val("")
+            })
+
+            $("#add").click(()=>{
+                const number = $("#accountNumber").val()
+                const type = $("#accountType").val()
+                const balance = $("#accountBalance").val()
+    
+                const request = {
+                    "accountNumber":number,
+                    "accountType":type,
+                    "accountBalance":balance
+                }
+                console.log(JSON.stringify(request))
+                $.ajax({
+                    url:"http://localhost:3002/addAccount/insert",
+                    type:"POST",
+                    dataType:"text",
+                    beforeSend:function(handler){
+                        handler.setRequestHeader("Authorization","Basic "+btoa("rakesh:rakesh"))
+                    },
+                    contentType:"application/json;charset=utf-8",
+                    data:JSON.stringify(request),
+                    success:function(response){
+                        alert(JSON.stringify(response))
+                        /*
+                        let element = $("#status")
+                        element.append(`<h1>${response.loanName} has added</h1>`)*/
+                    },
+                    error:function(err){
+                        let element = $("#status")
+                        element.append(`<h1>${err.status}</h1>`)
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <p id="status" class="display-6 text-center text-primary"></p>
+            <div class="p-5 m-5 rounded-5 shadow custom-box">
+                <div class="form group">
+                    <label>Account Number</label>
+                    <input type="number" id="accountNumber" class="form-control" placeholder="Account Number" />
+                </div>
+                <div class="form group">
+                    <label>Account Type</label>
+                    <input type="text" id="accountType" class="form-control" placeholder="Account Type" />
+                </div>
+                <div class="form group">
+                    <label>Account Balance</label>
+                    <input type="number" id="accountBalance" class="form-control" placeholder="Account Balance" />
+                </div>
+                <div class="m-5 row justify-content-around">
+                    <button id="add" class="col-1 btn btn-outline-primary"><p class="display-6 bi bi-cash-coin"></p></button>
+                    <button id="cancel" class="col-1 btn btn-outline-dark"><p class="display-6 bi bi-escape"></p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
