@@ -1,8 +1,6 @@
 function fetchAccountDetails() {
-    // Retrieve customer ID from input field
     let customerId = parseInt(document.getElementById('customerId').value);
-
-    // Array of customer accounts
+// data
     let customerAccounts = [
         {
             accountId: 101,
