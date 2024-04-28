@@ -17,6 +17,18 @@ public class Loans {
         return loanNumber;
     }
 
+        @Override
+    public String toString() {
+        return "Loans{" +
+                "loanNumber=" + loanNumber +
+                ", loanAmount=" + loanAmount +
+                ", loanDate='" + loanDate + '\'' +
+                ", loanStatus='" + loanStatus + '\'' +
+                ", borrowerName='" + borrowerName + '\'' +
+                ", borrowerContact=" + borrowerContact +
+                '}';
+    }
+
     public void setLoanNumber(Long loanNumber) {
         this.loanNumber = loanNumber;
     }
@@ -73,15 +85,5 @@ public class Loans {
     public Loans() {
     }
 
-    @Override
-    public String toString() {
-        return "Loans{" +
-                "loanNumber=" + loanNumber +
-                ", loanAmount=" + loanAmount +
-                ", loanDate='" + loanDate + '\'' +
-                ", loanStatus='" + loanStatus + '\'' +
-                ", borrowerName='" + borrowerName + '\'' +
-                ", borrowerContact=" + borrowerContact +
-                '}';
-    }
+
 }
