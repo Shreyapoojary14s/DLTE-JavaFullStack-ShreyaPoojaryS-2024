@@ -9,8 +9,11 @@
 <h:body>
     <f:view>
         <h:form>
+
             Loan Number to Delete: <h:inputText value="#{loans.loanNumber}" var="number" /><br/>
-            <h:commandButton value="Delete Loan" action="#{loanServices.removeLoan(number)}" />
+
+            <h:commandButton value="Deleting of  Loan" action="#{loanServices.removeLoan(number)}" />
+
         </h:form>
     </f:view>
 </h:body>
