@@ -7,16 +7,27 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:body>
     <f:view>
-        <!-- Add new loan -->
+
         <h:form>
+
             Loan Number: <h:inputText value="#{loans.loanNumber}" /><br/>
+
             Loan Amount: <h:inputText value="#{loans.loanAmount}" /><br/>
+
             Loan Date: <h:inputText value="#{loans.loanDate}" /><br/>
+
             Loan Status: <h:inputText value="#{loans.loanStatus}" /><br/>
+
             Borrower Name: <h:inputText value="#{loans.borrowerName}" /><br/>
+
             Borrower Contact: <h:inputText value="#{loans.borrowerContact}" /><br/>
-            <h:commandButton value="Add Loan" action="#{loanServices.createLoans(loans)}" />
+
+            <h:commandButton value="add new loan" action="#{loanServices.createLoans(loans)}" />
+
         </h:form>
+
     </f:view>
+
 </h:body>
+
 </html>
