@@ -38,7 +38,7 @@ function fetchAccountDetails() {
             accountCard.className = 'account-box';
             accountCard.innerHTML = `
             
-                <h3 class="account-details-title">Account Details</h3>
+                <h3 class="account-details-title">Account</h3>
                 <p><strong>Account ID:</strong> ${account.accountId}</p>
                 <p><strong>Account Number:</strong> ${account.accountNumber}</p>
                 <p><strong>Customer ID:</strong> ${account.customerId}</p>
