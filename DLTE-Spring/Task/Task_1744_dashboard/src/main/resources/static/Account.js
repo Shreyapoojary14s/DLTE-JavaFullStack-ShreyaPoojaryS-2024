@@ -27,7 +27,7 @@ function fetchAccountDetails() {
             accountBalance: 69800.00
         },
     ];
-    let activeAccounts = customerAccounts.filter(account => account.customerId === customerId && account.accountStatus === 'Active');
+    let activeAccounts = customerAccounts.filter(account => account.customerId === customerId && account.accountStatus === 'active');
     let accountDetailsContainer = document.getElementById('accountDetailsContainer');
     accountDetailsContainer.innerHTML = '';
 
