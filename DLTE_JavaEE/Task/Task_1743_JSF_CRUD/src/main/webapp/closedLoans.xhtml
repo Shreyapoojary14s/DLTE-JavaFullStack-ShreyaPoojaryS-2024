@@ -6,12 +6,16 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
+
 <h:body>
-    <!-- Display closed loans -->
+    <!-- Closed loans -->
+
+
     <h:dataTable value="#{loanServices.closedLoans()}" var="loans">
         <h:column>
-            Loan Number: #{loans.loanNumber}<br/>
-            Loan Amount: #{loans.loanAmount}<br/>
+            Loan Number: #{loans.loanNumber}<br/><!---loan no---->
+
+            Loan Amount: #{loans.loanAmount}<br/><!---amount--->
             Loan Date:   #{loans.loanDate}<br/>
             Loan Status: #{loans.loanStatus}<br/>
             Borrower Name: #{loans.borrowerName}<br/>
