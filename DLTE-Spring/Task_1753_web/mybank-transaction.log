@@ -1,0 +1,2 @@
+[31m2024-05-01 10:55:26,408[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-10 housekeeper [32mHikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=16h45m47s289ms922µs500ns).
+[0;39m
