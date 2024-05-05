@@ -3,7 +3,7 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Index </title>
 </head>
 <body>
 </body><div class="container">
@@ -11,8 +11,10 @@
     <div th:if="${error}" class="alert alert-danger" role="alert">
         <strong>error:</strong> <span th:text="${error}"></span>
     </div>
+    
     <form th:action="@{/web/send}" th:object="${transaction}" method="post">
         <div class="mb-3">
+            
             <label for="transactionId" class="form-label">Transaction id</label>
             <input type="number" class="form-control" id="transactionId" th:field="*{transactionId}">
         </div>
