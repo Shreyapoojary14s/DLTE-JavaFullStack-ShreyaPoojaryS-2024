@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjIcsSv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .carousel {
+            margin-top: 20px;
+        }
+        footer {
+            padding-top: 20px;
+        }
+        .update-btn2 {
+            background-color: white;
+            color: #182052;
+            border: 2px solid #182052;
+            border-radius: 20px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+
+        .card {
+            background-color: #182052 !important;
+            color: white !important;
+            border-radius: 30px;
+            display: flex;
+
+            margin-right: 20px; /* Adjust margin between cards */
+            margin-bottom: 20px;
+        }
+
+        .card-text {
+            color: white;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<header th:insert="header :: head"></header>
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+        <div id="accountDetails" class="col mx-auto">
+
+        </div>
+    </div>
+    <div id="pagination" class="mt-3"></div>
+    <div id="errorMessage" class="alert alert-danger mt-3 d-none"></div>
+</div>
+
+
+<div class="modal" id="updateModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <p id="errorCode" style="color: #182052; font-family: 'Poppins', sans-serif;"></p>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+                <p id="errorMessage2" style="color: #182052; font-family: 'Poppins', sans-serif;"></p>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-center">
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:insert="footer :: foot"></footer>
+</body>
+<script>
+    function redirectToErrorPage() {
+            window.location.href = "/customer/error/?message=" + encodeURIComponent("Page under development"); // Replace "error-page-url.html" with the actual URL of your error page-->
+            }
+    let currentPage = 1;
+    const itemsPerPage = 2;
+
+    function changePage(page) {
+        currentPage = page;
+        fetchActiveAccounts();
+    }
+
+    function fetchActiveAccounts() {
+        var soapRequest = `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="http://account.services">
+            <soapenv:Header/>
+            <soapenv:Body>
+                <acc:viewAllAccountRequest>
+                </acc:viewAllAccountRequest>
+            </soapenv:Body>
+        </soapenv:Envelope>`;
+
+        $.ajax({
+            url: "http://localhost:3002/accountrepo/account.wsdl",
+            type: "POST",
+            dataType: "xml",
+            contentType: "text/xml;charset=utf-8",
+            data: soapRequest,
+            success: function(response) {
+                var accounts = $(response).find("ns2\\:account");
+
+                if (accounts.length === 0) {
+                    let errorMessage = "No active accounts found.";
+                    window.location.href = "/customer/error/?message=" + encodeURIComponent(errorMessage)+ "&code=" + encodeURIComponent(404);
+                    return;
+                    // var excRegex = /EXC00\d\s*:/;
+                    // // var validationRegex = /EXV00\d\s*:/;
+                    // if (excRegex.test(response)) {
+                    //     var errorMessage = response.replace(excRegex, '').trim();
+                    //     var errorCode = response.match(excRegex)[0].trim();
+                    //     $("#errorMessage2").text(errorMessage);
+                    //     $("#errorCode").text(errorCode);
+                    //     $("#updateModal").modal("show");
+                    //     setTimeout(hideModal, 3000);
+                    // }
+                    // return;
+                }
+
+                var accountDetailsHTML = "<h2>Active Account</h2>";
+
+                var startIndex = (currentPage - 1) * itemsPerPage;
+                var endIndex = startIndex + itemsPerPage;
+
+                accounts.each(function(index) {
+                    if (index >= startIndex && index < endIndex) {
+                        var accountId = $(this).find("ns2\\:accountId").text();
+                        var accountNumber = $(this).find("ns2\\:accountNumber").text();
+                        var customerId = $(this).find("ns2\\:customerId").text();
+                        var accountType = $(this).find("ns2\\:accountType").text();
+                        var accountStatus = $(this).find("ns2\\:accountStatus").text();
+                        var accountBalance = $(this).find("ns2\\:accountBalance").text();
+
+                        var accountHTML = `
+                            <div class="card col-md-6 mb-4">
+                                <div class="card-body">
+                                    <p class="card-text">Account Number: ${accountNumber}</p>
+                                    <p class="card-text">Account Type: ${accountType}</p>
+                                    <p class="card-text">Account Status: ${accountStatus}</p>
+                                    <p class="card-text">Account Balance: ${accountBalance}</p>
+                                    <button class="update-btn2" onclick="redirectToErrorPage()">CLOSE ACCOUNT</button>
+                                </div>
+                            </div>
+                        `;
+
+                        accountDetailsHTML += accountHTML;
+                    }
+                });
+
+                $("#accountDetails").html(accountDetailsHTML);
+
+                $("#errorMessage").addClass("d-none");
+
+                renderPagination(accounts.length);
+            },
+            error: function(xhr, status, error) {
+                let errorMessage = xhr.responseText;
+                let errorCode = xhr.status;
+                window.location.href = "/customer/error/?message=" + encodeURIComponent(errorMessage) + "&code=" + encodeURIComponent(errorCode);
+            }
+        });
+    }
+
+    function renderPagination(totalItems) {
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        let paginationHTML = "";
+        for (let i = 1; i <= totalPages; i++) {
+            const liClass = (i === currentPage) ? "page-item active" : "page-item";
+            paginationHTML += `<li class="${liClass}"><button class="page-link" onclick="changePage(${i})">${i}</button></li>`;
+        }
+        $("#pagination").html(`<nav aria-label="Page navigation"><ul class="pagination">${paginationHTML}</ul></nav>`);
+    }
+
+    function redirectToCloseAccountPage(accountNumber, accountType, accountStatus, accountBalance) {
+        // Store account details in session storage
+        var accountDetails = {
+            accountNumber: accountNumber,
+            accountType: accountType,
+            accountStatus: accountStatus,
+            accountBalance: accountBalance
+        };
+        sessionStorage.setItem('accountDetails', JSON.stringify(accountDetails));
+
+        window.location.href = "/customer/update";
+    }
+    fetchActiveAccounts();
+</script>
+</html>
+

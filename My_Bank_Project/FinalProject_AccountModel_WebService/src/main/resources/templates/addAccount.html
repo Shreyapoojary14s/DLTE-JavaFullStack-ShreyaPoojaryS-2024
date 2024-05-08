@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Account</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<header th:insert="header :: head"></header>
+
+<!-- Form for adding account -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="form-container">
+                <h2 class="text-center mb-4">Add Account</h2>
+                <!-- Required fields message -->
+                <div id="requiredFieldsMessage" class="alert alert-danger" style="display: none;">All fields are necessary.</div>
+                <form id="addAccountForm">
+                    <div class="mb-3">
+                        <label for="accountNumber" class="form-label">Account Number</label>
+                        <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="ex:123456789876">
+                        <div id="accountNumberError" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="accountType" class="form-label">Account Type</label>
+                        <select class="form-select" id="accountType" name="accountType">
+                            <option selected disabled>Select Account Type</option>
+                            <option value="savings">savings</option>
+                            <option value="current">current</option>
+                            <option value="salary">salary</option>
+                        </select>
+                        <div id="accountTypeError" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="accountBalance" class="form-label">Account Balance</label>
+                        <input type="number" class="form-control" id="accountBalance" name="accountBalance" placeholder="ex:1000" min="0">
+                        <div id="accountBalanceError" class="text-danger"></div>
+                    </div>
+                    <div class="text-center">
+                        <button id="submitButton" type="button" class="btn btn-primary me-2" onclick="submitForm()">Submit</button>
+                        <button type="button" class="btn btn-secondary" onclick="goBack()">Back</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Error message container moved here -->
+            <div id="errorMessage" class="mt-3" style="display: none;">
+                <div class="alert alert-danger" role="alert">
+                    Account you're trying to add already exists.
+                </div>
+            </div>
+            <!-- Success message container -->
+            <div id="successMessage" class="mt-3" style="display: none;">
+                <div class="alert alert-success" role="alert">
+                    Account added successfully!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+    // Function to enable/disable the submit button based on form input
+    function toggleSubmitButton() {
+        const accountNumber = $("#accountNumber").val();
+        const accountType = $("#accountType").val();
+        const accountBalance = $("#accountBalance").val();
+
+        const submitButton = $("#submitButton");
+
+        // Check if any of the fields are filled
+        if (accountNumber || accountType || accountBalance) {
+            submitButton.prop("disabled", false); // Enable submit button
+        } else {
+            submitButton.prop("disabled", true); // Disable submit button
+        }
+    }
+
+    // Call the function whenever input changes
+    $(document).ready(function() {
+        $("#accountNumber, #accountType, #accountBalance").on("input", function() {
+            toggleSubmitButton();
+            hideRequiredFieldsMessage(); // Hide required fields message when any input changes
+        });
+    });
+
+    // Function to display message for required fields
+    function displayRequiredFieldsMessage() {
+        $("#requiredFieldsMessage").show();
+    }
+
+    // Function to hide message for required fields
+    function hideRequiredFieldsMessage() {
+        $("#requiredFieldsMessage").hide();
+    }
+
+    // Function to handle form submission
+    function submitForm() {
+        const accountNumber = $("#accountNumber").val();
+        const accountType = $("#accountType").val();
+        const accountBalance = $("#accountBalance").val();
+
+        // Check if any of the fields are empty
+        if (!accountNumber || !accountType || !accountBalance) {
+            displayRequiredFieldsMessage(); // Display required fields message
+            return;
+        }
+
+        // Your existing submit form logic here
+        addAccount();
+    }
+
+    // Your existing functions
+    function addAccount() {
+        // Hide success message at the beginning of the function
+        $("#successMessage").hide();
+        // Hide error message
+        $("#errorMessage").hide();
+
+        const number = $("#accountNumber").val();
+        const type = $("#accountType").val();
+        const balance = $("#accountBalance").val();
+
+        // Clear previous error messages
+        $("#accountNumberError").text("");
+        $("#accountTypeError").text("");
+        $("#accountBalanceError").text("");
+
+        // Frontend validation
+        if (!isValidAccountNumber(number)) {
+            $("#accountNumberError").text("Account number must be 12 digits.");
+            return;
+        }
+
+        if (!type) {
+            $("#accountTypeError").text("Please select an account type.");
+            return;
+        }
+
+        if (balance < 1000) {
+            $("#accountBalanceError").text("Balance must be a minimum 1000.");
+            return;
+        }
+
+        const request = {
+            "accountNumber": number,
+            "accountType": type,
+            "accountBalance": balance
+        };
+
+        $.ajax({
+            url: "http://localhost:3002/addAccount/insert",
+            type: "POST",
+            dataType: "text",
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify(request),
+            success: function(response) {
+                if (response === "exists") {
+                    $("#errorMessage").show();
+                } else {
+                    $("#successMessage").show();
+                    clearForm();
+                    // Hide success message after 5 seconds
+                    setTimeout(function() {
+                        $("#successMessage").fadeOut();
+                    }, 5000);
+                }
+            },
+            error: function(xhr, status, error) {
+                // Display error message
+                $("#errorMessage").show();
+            }
+        });
+    }
+
+    function isValidAccountNumber(number) {
+        // Check if account number is exactly 12 digits
+        return /^\d{12}$/.test(number);
+    }
+
+    function clearForm() {
+        $("#addAccountForm")[0].reset();
+    }
+
+    function goBack() {
+        // Redirect back to the dashboard
+        window.location.href = "http://localhost:3002/customer/dashboard/";
+    }
+</script>
+
+
+<footer th:insert="footer :: foot"></footer>
+</body>
+</html>
+
+
+
+
+
